@@ -1,5 +1,6 @@
 import Nav from './Nav/Nav';
 import Banner from './Banner/Banner';
+import './Header.css';
 
 const Header = () => (
   <header>
