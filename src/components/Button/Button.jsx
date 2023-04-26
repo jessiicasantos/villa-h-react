@@ -1,7 +1,7 @@
 const Button = () => (
-  <>
-    <h2>_*Button (header)</h2>
-  </>
+  //   <div>
+  <a href="#orcamento">SOLICITAR UM ORÇAMENTO</a>
+  //   </div>
 );
 
 export default Button;

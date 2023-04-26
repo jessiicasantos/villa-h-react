@@ -3,12 +3,11 @@ import NavMenu from './NavMenu/NavMenu';
 import Button from '../../Button/Button';
 
 const Nav = () => (
-  <>
-    <h1>Nav</h1>
+  <nav className="top-nav">
     <NavLogo />
     <NavMenu />
     <Button />
-  </>
+  </nav>
 );
 
 export default Nav;
