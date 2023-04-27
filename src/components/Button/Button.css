@@ -1,3 +1,11 @@
 .btn-brd-gold {
+    text-decoration: none;
     border: 1px solid #AA8B4E;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    padding: 13px 15px 12px 14px;
 }

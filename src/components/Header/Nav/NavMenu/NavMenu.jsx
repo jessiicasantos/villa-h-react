@@ -1,23 +1,37 @@
+const menus = [
+  {
+    href: '#a-villa-h',
+    text: 'A Villa H',
+  },
+  {
+    href: '#eventos',
+    text: 'Eventos',
+  },
+  {
+    href: '#estruturas',
+    text: 'Estruturas',
+  },
+  {
+    href: '#gastronomia',
+    text: 'Gastronomia',
+  },
+  {
+    href: '#fotos',
+    text: 'Fotos',
+  },
+  {
+    href: '#depoimentos',
+    text: 'Depoimentos',
+  },
+];
+
 const NavMenu = () => (
   <ul className="nav-links">
-    <li className="nav-link">
-      <a href="#a-villa-h">A Villa H</a>
-    </li>
-    <li className="nav-link">
-      <a href="#eventos">Eventos</a>
-    </li>
-    <li className="nav-link">
-      <a href="#estruturas">Estruturas</a>
-    </li>
-    <li className="nav-link">
-      <a href="#gastronomia">Gastronomia</a>
-    </li>
-    <li className="nav-link">
-      <a href="#fotos">Fotos</a>
-    </li>
-    <li className="nav-link">
-      <a href="#depoimentos">Depoimentos</a>
-    </li>
+    {menus.map((m, index) => (
+      <li className="nav-link" key={`${m}`[index]}>
+        <a href={m.href}>{m.text}</a>
+      </li>
+    ))}
   </ul>
 );
 
