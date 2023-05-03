@@ -5,7 +5,6 @@ import './Banner.css';
 
 const Banner = () => (
   <div className="banner">
-    <h1>_Banner</h1>
     <BannerSocial />
     <BannerHeadline />
     <BannerGallery />
