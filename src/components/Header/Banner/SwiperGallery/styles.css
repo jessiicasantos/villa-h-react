@@ -23,18 +23,24 @@
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
-    color: black;
+    color: #fff;
     /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
+  .swiper-gallery .swiper-slide {
+    height: auto;
+    max-width: 803px;
+  }
   
-  .swiper-slide img {
+  .swiper-gallery .swiper-slide img {
     display: block;
     width: 100%;
+    max-height: 719px;
     height: 100%;
     object-fit: cover;
+    object-position: bottom;
   }
   

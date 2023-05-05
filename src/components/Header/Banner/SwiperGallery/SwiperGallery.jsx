@@ -6,9 +6,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './styles.css';
 // import required modules
-import { Navigation } from 'swiper';
+import { Mousewheel, Keyboard, Navigation } from 'swiper';
 import Slide1 from '../img/Decoracao-Vila-H-1.png';
-import Slide2 from '../img/Paisagem-Villa-H.png';
+import Slide2 from '../img/Festa-e-Paisagem-Villa-H.png';
+import Slide3 from '../img/Paisagem-Villa-H.png';
+import Slide4 from '../img/Sala-de-Visitas.png';
 
 const slides = [
   {
@@ -19,18 +21,30 @@ const slides = [
     img: Slide2,
     altText: 'Confraternização com paisagem paradisíaca ao pôr do sol.',
   },
+  {
+    img: Slide3,
+    altText: 'Paisagem do mar e barco ao pôr do sol.',
+  },
+  {
+    img: Slide4,
+    altText: 'Sala de visitas.',
+  },
 ];
 
 const SwiperGallery = () => {
   return (
     <>
       <Swiper
+        mousewheel={true}
+        keyboard={{
+          enabled: true,
+        }}
         navigation
-        modules={[Navigation]}
+        modules={[Mousewheel, Keyboard, Navigation]}
         spaceBetween={15}
         slidesPerView={'auto'}
         grabCursor={true}
-        className="mySwiper"
+        className="swiper-gallery"
       >
         {slides.map((s, index) => (
           <SwiperSlide key={`${s}`[index]}>

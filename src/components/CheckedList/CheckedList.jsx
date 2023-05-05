@@ -11,7 +11,7 @@ const checkedItems = [
 
 const CheckedList = () => (
   // <h1>checkedlist</h1>
-  <ul>
+  <ul className="checked-list">
     {checkedItems.map((c, index) => (
       <li key={`${c}`[index]}>
         <Checked />

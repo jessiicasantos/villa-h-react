@@ -1,7 +1,8 @@
-const Section = ({ title, text }) => (
-  <section>
-    <h1>{title}</h1>
-    <p>{text}</p>
+const Section = ({ className, title, text, btn }) => (
+  <section className={className}>
+    <>{title}</>
+    <>{text}</>
+    <>{btn}</>
   </section>
 );
 

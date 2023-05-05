@@ -1,6 +1,6 @@
 .top-nav {
     margin: 0 auto;
-    padding: 0 0 77px;
+    padding: 43px 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,8 +8,8 @@
     max-width: 1110px;
 }
 
-.nav-logo {
-    padding: 0 50px 0 0;
+.nav-logo a {
+    padding: 40px 50px 32px 0;
 }
 
 .nav-logo a {
@@ -23,7 +23,7 @@
 }
 
 .nav-link a {
-    padding: 8px;
+    padding: 40px 8px;
     font-weight: 400;
     font-size: 12px;
     line-height: 25px;

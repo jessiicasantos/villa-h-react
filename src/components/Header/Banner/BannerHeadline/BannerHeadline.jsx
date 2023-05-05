@@ -5,13 +5,22 @@ import CheckedList from '../../../CheckedList/CheckedList';
 const BannerHeadline = () => (
   <div className="banner-head">
     <Section
-      title="Muitos momentos em um só lugar."
-      text="Uma verdadeira vila capaz de reunir,  
-      em um só espaço, diferentes opções para 
-      você realizar o seu sonho."
+      className="section-banner"
+      title={
+        <h1>
+          Muitos momentos <strong>em um só lugar.</strong>
+        </h1>
+      }
+      text={
+        <p>
+          Uma verdadeira vila capaz de reunir,
+          <br />
+          em um só espaço, diferentes opções para você realizar o seu sonho.
+        </p>
+      }
     />
     <CheckedList />
-    <a href="#a_villa-h">
+    <a href="#a_villa-h" className="more">
       <ArrowDown />
       <p>
         Descubra mais sobre o espaço <br /> e se encante das mais diversas

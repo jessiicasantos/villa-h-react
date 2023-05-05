@@ -1,5 +1,75 @@
 .banner {
-    border: 1px dashed gray;
     padding: 0 0 0 283px;
     display: flex;
+}
+
+.socials {
+    margin: auto 0 0;
+    max-height: 551px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials a {
+    margin: 0 0 9px;
+}
+
+.line-vert {
+    position: relative;
+    margin: 7px 0 0;
+    height: 50em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.line-vert::after {
+    content: '';
+    position: absolute;
+    border: 1px solid red;
+    height: 100%;
+    display: block;
+}
+
+.banner-head {
+    padding: 0 0 0 7.5%;
+    max-width: 410px;
+    width: 100%;
+}
+
+.section-banner h1 {
+    margin: 72px 0 0;
+}
+
+.section-banner p {
+    margin: 16px 0 33px;
+}
+
+.more {
+    padding: 87px 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-decoration: none;
+    text-align: left;
+}
+
+.more p {
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #DCDCDC;
+    opacity: 0.5;
+}
+
+.more svg {
+    margin: 0 0 19px;
+}
+
+.swiper-gallery {
+    margin: auto 0 0 auto;
+    max-width: 941px;
+    max-height: 604px;
 }
