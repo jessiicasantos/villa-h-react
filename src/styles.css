@@ -43,4 +43,37 @@
     object-fit: cover;
     object-position: bottom;
   }
-  
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    right: initial;
+    width: initial;
+    height: initial;
+    /* top: initial;
+    bottom: 0; */
+  }
+
+  .swiper-button-prev {
+    left: 0;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .swiper-button-prev::after {
+    background: #E9E9E9;
+    color: #1F2338;
+  }
+
+  .swiper-button-next::after {
+    background: #1F2338;
+    color: #FFFFFF;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    padding: 33px 37px 32px 36px;
+    font-size: 15px;
+    font-weight: 600;
+  }

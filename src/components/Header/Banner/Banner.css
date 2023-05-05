@@ -26,7 +26,7 @@
 .line-vert::after {
     content: '';
     position: absolute;
-    border: 1px solid red;
+    border: 1px solid #AA8B4E;
     height: 100%;
     display: block;
 }

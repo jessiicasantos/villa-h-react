@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-import './styles.css';
+import '../../../../styles.css';
 // import required modules
 import { Mousewheel, Keyboard, Navigation } from 'swiper';
 import Slide1 from '../img/Decoracao-Vila-H-1.png';
