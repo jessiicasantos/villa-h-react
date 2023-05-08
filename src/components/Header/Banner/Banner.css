@@ -43,6 +43,9 @@
 
 .section-banner p {
     margin: 16px 0 33px;
+    font-size: 20px;
+    line-height: 34px;
+    color: #DCDCDC;
 }
 
 .more {
@@ -51,7 +54,6 @@
     flex-direction: column;
     justify-content: left;
     text-decoration: none;
-    text-align: left;
 }
 
 .more p {
