@@ -11,7 +11,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 h6 {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -24,6 +23,10 @@ ul {
   padding: 0;
 }
 
+section p, h6, button, .checked-list {
+  font-family: 'Open Sans', sans-serif;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -31,7 +34,6 @@ code {
 
 .container {
   max-width: 1110px;
-  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -57,7 +59,6 @@ section h2 {
 }
 
 section p {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -71,9 +72,21 @@ section p {
   color: #5F5F5F;
 }
 
+.btn-dark-blue {
+  padding: 15px 25px 14px 26px;
+  background: #1F2338;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
 .checked-list {
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 37px;

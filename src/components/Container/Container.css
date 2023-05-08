@@ -16,3 +16,39 @@
 .benefits h6 {
     margin: 121px 0 19px 16px;
 }
+
+.photo-section {
+    display: flex;
+    align-items: center;
+}
+
+.photo-section .section {
+    margin: auto;
+    padding: 25px;
+    max-width: 415px;
+}
+
+.photo-section h2 {
+    margin: 0 0 11px;
+    max-width: 283px;
+}
+
+.photo-section p {
+    margin: 0 0 23px;
+    line-height: 25px;
+}
+
+.photo-section > div, 
+.photo-section > section {
+    width: 50%;
+}
+
+.photo-section div > img {
+    max-width: 555px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.photo-right {
+    flex-direction: row-reverse;
+}

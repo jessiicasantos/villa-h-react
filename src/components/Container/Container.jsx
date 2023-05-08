@@ -2,6 +2,7 @@ import Section from '../Section/Section';
 import SectionBenefits from './SectionBenefits/SectionBenefits';
 import './Container.css';
 import { ReactComponent as Fish } from '../../assets/img/fish.svg';
+import PhotoSection from './PhotoSection/PhotoSection';
 
 const Container = () => (
   <div className="container">
@@ -24,6 +25,7 @@ const Container = () => (
         title={<h6>CONFIRA ALGUNS BENEFÍCIOS</h6>}
       />
     </div>
+    <PhotoSection />
   </div>
 );
 
