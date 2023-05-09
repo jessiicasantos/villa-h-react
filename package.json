@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@fontsource/aleo": "^4.5.9",
+    "@fontsource/heebo": "^4.5.15",
     "@fontsource/open-sans": "^4.5.14",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

@@ -1232,6 +1232,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/aleo/-/aleo-4.5.9.tgz#7b83c8933e4c4340ad6f3aec2967d016521c807e"
   integrity sha512-Z83wrPNaAypF8MAnJRYW1qBgbbz0UYUW9tRoTaAq1yUt9coGXM+q7DimZfTRNa770caVCX9jb0q8jEGrnJ84DQ==
 
+"@fontsource/heebo@^4.5.15":
+  version "4.5.15"
+  resolved "https://registry.yarnpkg.com/@fontsource/heebo/-/heebo-4.5.15.tgz#5e5542d9fa9d6560eb95dfca0a444299e9b1e4c1"
+  integrity sha512-ms6Z2d7czWiOC50oIX13iw4hJ73i7VLuJRP5LOkcLe+4UCBKm6wxhd6k3pEQ0B8Cgio1gCWiazIgS3SlS1UuAg==
+
 "@fontsource/open-sans@^4.5.14":
   version "4.5.14"
   resolved "https://registry.npmjs.org/@fontsource/open-sans/-/open-sans-4.5.14.tgz"

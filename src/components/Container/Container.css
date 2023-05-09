@@ -1,7 +1,12 @@
+.container-md {
+    margin: 0 auto;
+    max-width: 1338px;
+}
+
 .benefits {
     display: flex;
     align-items: center;
-    padding: 161px 0 106px;
+    padding: 161px 0 99px;
 }
 
 .benefits .section {
@@ -15,6 +20,10 @@
 
 .benefits h6 {
     margin: 121px 0 19px 16px;
+}
+
+.photos-section {
+    padding: 0 0 172px;
 }
 
 .photo-section {
@@ -51,4 +60,60 @@
 
 .photo-right {
     flex-direction: row-reverse;
+}
+
+.cards-horizontal {
+    display: flex;
+    padding: 78px 15px 114px;
+    max-width: 1108px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 2px;
+}
+
+.card:not(:last-child) {
+    padding: 0 40px 0 0;
+}
+
+.cards-horizontal .card svg {
+    max-width: 64px;
+    padding: 0 0 38px;
+}
+
+.cards-horizontal h3 {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 700;
+}
+
+.cards-horizontal p {
+    margin: 26px 0 0;
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.cards-horizontal .card:first-child {
+    max-width: 242px;
+}
+
+.tag {
+    position: relative;
+}
+
+.tag::after {
+    content: "Em breve";
+    position: absolute;
+    top: -33px;
+    border: 1px solid #AA8B4E;
+    border-radius: 5px;
+    padding: 0px 17px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
