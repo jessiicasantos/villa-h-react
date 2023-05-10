@@ -1,0 +1,21 @@
+import  { ReactComponent as PreWedding } from '../../../assets/img/pre-wedding-icon.svg'
+
+const links = [
+    {
+        svg: <PreWedding />,
+        link: "#prewed",
+        title: "Pré Wedding"
+    }
+]
+
+const MenuEvents = ({ svg, link, title }) => (
+    <div className="menu-events theme-dark-blue">
+        <ul>
+            <li>
+                <a href={link}>{svg}{title}</a>
+            </li>
+        </ul>
+    </div>
+)
+
+export default MenuEvents;

@@ -1,9 +1,10 @@
 import Section from '../Section/Section';
 import SectionBenefits from './SectionBenefits/SectionBenefits';
 import './Container.css';
-import { ReactComponent as Fish } from '../../assets/img/fish.svg';
+import { ReactComponent as Fish } from '../../assets/img/fish-icon.svg';
 import PhotoSection from './PhotoSection/PhotoSection';
 import CardsHorizontal from './CardsHorizontal/CardsHorizontal';
+import EventSection from './EventSection/EventSection';
 
 const Container = () => (
   <>
@@ -31,6 +32,9 @@ const Container = () => (
     </div>
     <div className="cards-benefits container-md theme-dark-blue">
       <CardsHorizontal />
+    </div>
+    <div className="container">
+      <EventSection />
     </div>
   </>
 );
