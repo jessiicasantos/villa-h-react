@@ -2,7 +2,7 @@ import SalaoPrincipal from '../img/Salao-Principal.png';
 import Loft from '../img/Loft-e-varanda-externa.png';
 import Deck from '../img/Deck-Piscina.png';
 import Gastronomia from '../img/Gastronomia_Villa H.png';
-import Photo from './Photo';
+import Photo from './Photo/Photo';
 import Section from '../../Section/Section';
 
 const columns = [

@@ -1,5 +1,5 @@
-import { ReactComponent as SvgBuild } from '../img/SvgBuild.svg';
-import { ReactComponent as SvgWave } from '../img/SvgWave.svg';
+import { ReactComponent as SvgBuild } from '../../img/SvgBuild.svg';
+import { ReactComponent as SvgWave } from '../../img/SvgWave.svg';
 
 const cards = [
   {

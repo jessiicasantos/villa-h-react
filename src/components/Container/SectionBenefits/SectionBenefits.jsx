@@ -1,4 +1,4 @@
-import Benefits from './Benefits';
+import Benefits from './Benefits/Benefits';
 
 const SectionBenefits = ({ className, title }) => (
   <div className={className}>
