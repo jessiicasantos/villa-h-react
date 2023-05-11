@@ -97,6 +97,20 @@ section p {
   color: #DCDCDC;
 }
 
+.theme-gray {
+  background: #E9E9E9;
+}
+
+.theme-gray h3 {
+  color: #20334F;
+}
+
+.theme-gray p {
+  color: #5F5F5F;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .checked-list {
   padding: 0;
   font-size: 13px;

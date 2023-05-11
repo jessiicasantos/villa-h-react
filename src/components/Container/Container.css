@@ -73,7 +73,7 @@
     border-radius: 2px;
 }
 
-.card:not(:last-child) {
+.cards-horizontal .card:not(:last-child) {
     padding: 0 40px 0 0;
 }
 
@@ -116,4 +116,132 @@
     line-height: 25px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+}
+
+.event-section {
+    position: relative;
+    padding: 162px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-section section {
+    max-width: 468px;
+}
+
+.event-section section > svg {
+    margin: 0 0 20px;
+}
+
+.event-section h2 {
+    margin: 0 0 21px;
+    max-width: 265px;
+    font-weight: 400;
+}
+
+.event-section p {
+    margin: 0 0 1.5em;
+}
+
+.event {
+    max-width: 492px;
+    width: 100%;
+}
+
+.menu-event {
+    margin: 43px 0 0 0;
+}
+
+.menu-event > ul {
+    padding: 45px 0 57.2px 0;
+}
+
+.menu-event li {
+    padding: 0 56px 0 70px;
+}
+
+.menu-event a {
+    display: block;
+    padding: 0px 0 0 38px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.menu-event a.active {
+    background: linear-gradient(270deg, rgb(170 139 78 / 0.3) 0.41%, rgba(170, 139, 78, 0) 100.41%);
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.menu-event svg {
+    margin: 0 14px 0 0;
+    vertical-align: middle;
+}
+
+.card-event {
+    display: none;
+    position: absolute;
+    top: 513px;
+    left: -17px;
+    padding: 65px 66px 63px 69px;
+    max-width: 689px;
+}
+
+.card-event.active {
+    display: block;
+}
+
+.card-event h3 {
+    margin: 0 0 16px;
+    font-size: 30px;
+    line-height: 46px;
+}
+
+.card-event svg {
+    margin: 0 0 19px;
+}
+
+.card-event .tag {
+    margin: 0 0 8px;
+}
+
+.card-event .tag::after {
+    position: initial;
+    padding: 3px 17px 2px;
+    color: #AA8B4E;
+}
+
+.card-event p {
+    line-height: 26px;
+    max-width: 537px;
+}
+
+.card-event hr {
+    margin: 40px 9px 32px;
+}
+
+.card-event h6 {
+    margin: 0 0 10px;
+}
+
+.swiper-event {
+    max-width: 553px;
+}
+
+.swiper-event img {
+    max-width: 221px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.swiper-event .swiper-button-prev::after, .swiper-event .swiper-button-next::after {
+    padding: 33px 37px 32px 36px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 22px 24px 21px;
+    font-size: 12.5px;
 }

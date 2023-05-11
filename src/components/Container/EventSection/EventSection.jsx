@@ -1,11 +1,16 @@
-import Section from '../../Section/Section';
 import { ReactComponent as Fish } from '../../../assets/img/fish-icon.svg';
+import Section from '../../Section/Section';
+import Event from './Event/Event';
 
 const EventSection = () => (
   <div className="event-section">
     <Section
       svg={<Fish />}
-      title={<h2>Vários eventos. Um só lugar.</h2>}
+      title={
+        <h2>
+          Vários eventos. <strong>Um só lugar.</strong>
+        </h2>
+      }
       text={
         <p>
           Os espaços da Villa H foram planejados e decorados para acomodar todos
@@ -15,7 +20,7 @@ const EventSection = () => (
         </p>
       }
     />
-    {/* <Events /> */}
+    <Event />
   </div>
 );
 
