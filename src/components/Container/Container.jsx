@@ -5,6 +5,7 @@ import { ReactComponent as Fish } from '../../assets/img/fish-icon.svg';
 import PhotoSection from './PhotoSection/PhotoSection';
 import CardsHorizontal from './CardsHorizontal/CardsHorizontal';
 import EventSection from './EventSection/EventSection';
+import SectionBGPhoto from './SectionBGPhoto/SectionBGPhoto';
 
 const Container = () => (
   <>
@@ -35,6 +36,7 @@ const Container = () => (
     </div>
     <div className="container">
       <EventSection />
+      <SectionBGPhoto />
     </div>
   </>
 );
