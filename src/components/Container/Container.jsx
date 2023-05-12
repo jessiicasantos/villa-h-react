@@ -6,6 +6,7 @@ import PhotoSection from './PhotoSection/PhotoSection';
 import CardsHorizontal from './CardsHorizontal/CardsHorizontal';
 import EventSection from './EventSection/EventSection';
 import SectionBGPhoto from './SectionBGPhoto/SectionBGPhoto';
+import CardBGGastronomy from './Gastronomy/CardBGGastronomy/CardBGGastronomy';
 
 const Container = () => (
   <>
@@ -36,6 +37,7 @@ const Container = () => (
     </div>
     <EventSection />
     <SectionBGPhoto />
+    <CardBGGastronomy />
   </>
 );
 

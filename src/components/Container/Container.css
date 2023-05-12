@@ -247,7 +247,7 @@
 }
 
 .section-bg-photo {
-    margin: 324px 0 0;
+    margin: 324px 0 252px;
     background-image: url('./SectionBGPhoto/img/champagne-mountain-sea.png');
     background-repeat: no-repeat;
     background-position: right top;
@@ -346,4 +346,54 @@
     max-width: 1088px;
     max-height: 858px;
     object-fit: cover;
+}
+
+.card-bg-gastronomy {
+    position: relative;
+}
+
+.card-gastronomy {
+    position: absolute;
+    top: 57px;
+    padding: 54PX 72px 68px 58px;
+    max-width: 547px;
+}
+
+.card-gastronomy svg {
+    margin: 0 0 24px;
+}
+
+.card-gastronomy .tag::after {
+    position: relative;
+    top: initial;
+    padding: 3px 17px 2px;
+}
+
+.card-gastronomy h3 {
+    margin: 16px 0;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+}
+
+.card-gastronomy p {
+    margin: 0 0 40px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.card-gastronomy .btn-brd-gold {
+    padding: 16px 17px 15px 20px;
+}
+
+.card-gastronomy .btn-gold {
+    margin: 0 14px 0 0;
+    padding: 15px 25px 14px;
+}
+
+.bg-gastronomy {
+    display: flex;
+    justify-content: flex-end;
 }
