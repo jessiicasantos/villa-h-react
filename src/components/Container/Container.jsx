@@ -34,10 +34,8 @@ const Container = () => (
     <div className="cards-benefits container-md theme-dark-blue">
       <CardsHorizontal />
     </div>
-    <div className="container">
-      <EventSection />
-      <SectionBGPhoto />
-    </div>
+    <EventSection />
+    <SectionBGPhoto />
   </>
 );
 
