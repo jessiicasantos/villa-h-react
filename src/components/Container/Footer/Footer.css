@@ -1,0 +1,128 @@
+footer {
+    background: #1F2338;
+    padding: 114px 15px 47px;
+}
+
+.swiper-testimonial {
+    height: 130px;
+    margin: 0;
+}
+
+.swiper-testimonial h4 {
+    font-size: 30px;
+}
+
+.swiper-testimonial .more {
+    margin: 11px 0 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.swiper-testimonial .swiper-slide {
+    max-width: 294px;
+    align-items: center;
+}
+
+.swiper-testimonial img,
+.swiper-testimonial svg {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    border-radius: 50px;
+    margin: 0 17px 0 0;
+}
+
+.swiper-testimonial h4,
+.swiper-testimonial .more {
+    font-weight: 300;
+    line-height: 44px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.info-testimonial {
+    display: flex;
+    max-width: 294px;
+    opacity: 0.25;
+}
+
+.swiper-slide:hover .info-testimonial,
+.swiper-slide-active .info-testimonial {
+    opacity: 1;
+}
+
+.swiper-txt-testimonial h4 {
+    font-weight: 300;
+    font-size: 20px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.swiper-txt-testimonial .swiper-slide {
+    flex-direction: column;
+    margin: 0 0 23px;
+}
+
+.swiper-txt-testimonial .swiper-slide button {
+    padding: 21px 0;
+    text-align: left;
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+} 
+
+.swiper-testimonial .swiper-slide h5 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.swiper-testimonial .swiper-slide h6 {
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.swiper-testimonial .swiper-slide h5,
+.swiper-testimonial .swiper-slide h6 {
+    font-family: 'Aleo', serif;
+    font-weight: 400;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.swiper-txt-testimonial h4,
+.swiper-txt-testimonial .swiper-slide button {
+    font-weight: 300;
+    line-height: 28px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.swiper-txt-testimonial .swiper-slide,
+.swiper-testimonial .swiper-slide {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.swiper-testimonial .swiper-button-prev::after {
+    background: #AA8B4E;
+    color: #FFFFFF;
+}
+
+.swiper-testimonial .swiper-button-prev {
+    left: initial;
+    right: 82px;
+}
+
+.swiper-testimonial .swiper-button-prev,
+.swiper-testimonial .swiper-button-next {
+    top: 50%;
+    transform: translate(0, -50%);
+    margin: 0;
+}

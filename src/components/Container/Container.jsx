@@ -8,6 +8,7 @@ import EventSection from './EventSection/EventSection';
 import SectionBGPhoto from './SectionBGPhoto/SectionBGPhoto';
 import CardBGGastronomy from './Gastronomy/CardBGGastronomy/CardBGGastronomy';
 import Gallery from './Gallery/Gallery';
+import Footer from './Footer/Footer';
 
 const Container = () => (
   <>
@@ -40,6 +41,7 @@ const Container = () => (
     <SectionBGPhoto />
     <CardBGGastronomy />
     <Gallery />
+    <Footer />
   </>
 );
 
