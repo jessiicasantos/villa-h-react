@@ -3,7 +3,7 @@ import Section from '../../Section/Section';
 import Event from './Event/Event';
 
 const EventSection = () => (
-  <div className="container event-section">
+  <div className="container event-section" id="eventos">
     <Section
       svg={<Fish />}
       title={

@@ -3,7 +3,7 @@ import ChefBG from '../../img/chef-cooking.png';
 import { ReactComponent as Chef } from '../../../../assets/img/chef-icon.svg';
 
 const CardBGastronomy = () => (
-  <div className="container card-bg-gastronomy">
+  <div className="container card-bg-gastronomy" id="gastronomia">
     <div className="bg-gastronomy">
       <img src={ChefBG} alt="" />
     </div>

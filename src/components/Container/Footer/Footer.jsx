@@ -23,12 +23,12 @@ const dataSelect = [
 ];
 
 const Footer = () => (
-  <footer>
+  <footer id="depoimentos">
     <div className="container">
       <SwiperTxtTestimonial />
       <SwiperTestimonial />
       <hr />
-      <div className="orcamento">
+      <div className="orcamento" id="orcamento">
         <div className="orcamento-info">
           <Section
             className="theme-dark-blue"
@@ -46,6 +46,8 @@ const Footer = () => (
           <a
             href="https://www.google.com/maps/dir//Villa+H+-+Estrada+Leopoldo+Fr%C3%B3es,+170+A+-+S%C3%A3o+Francisco,+Niter%C3%B3i+-+RJ,+24360-005/@-22.9152238,-43.1125778,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x99815a29e69905:0xbaa84dcba9860517!2m2!1d-43.1103891!2d-22.9152238"
             className="theme-gold"
+            target="_blank"
+            rel="noreferrer"
           >
             Saiba como chegar
             <span className="arrow-gold">{'>'}</span>

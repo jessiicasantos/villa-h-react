@@ -48,9 +48,9 @@ const Event = () => (
         title={c.title}
         text={c.text}
         btn={
-          <button id="#orcamento" className="btn-dark-blue">
+          <a href="#orcamento" className="btn-dark-blue">
             SOLICITAR UM ORÇAMENTO
-          </button>
+          </a>
         }
         line={<hr />}
         subtitle={<h6>Veja fotos desse evento</h6>}

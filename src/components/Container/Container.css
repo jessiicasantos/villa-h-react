@@ -247,10 +247,10 @@
 }
 
 .section-bg-photo {
-    margin: 324px 0 252px;
     background-image: url('./SectionBGPhoto/img/champagne-mountain-sea.png');
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: right 351px;
+    padding: 350.4px 0 0;
     max-width: 1542px;
     width: 100%;
 }
@@ -350,6 +350,8 @@
 
 .card-bg-gastronomy {
     position: relative;
+    margin: 153.6px auto 0;
+    padding: 153px 15px 0;
 }
 
 .card-gastronomy {

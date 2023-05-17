@@ -23,7 +23,7 @@ const imageList = [
 ];
 
 const CardsGallery = () => (
-  <ul className="gallery-list">
+  <ul className="gallery-list" id="fotos">
     {imageList.map((image, i) => (
       <li key={`${image}`[i]} className={`${i % 2 ? 'void' : 'photo'}`}>
         <img src={image.img} alt="" />

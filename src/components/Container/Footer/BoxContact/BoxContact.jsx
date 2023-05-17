@@ -27,7 +27,7 @@ const BoxContact = () => (
     <ul>
       {dataContact.map((c, i) => (
         <li key={`${c}`[i]}>
-          <a href={c.link}>
+          <a href={c.link} target="_blank" rel="noreferrer">
             {c.svg} {c.contact}
           </a>
         </li>
