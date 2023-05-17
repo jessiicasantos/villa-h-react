@@ -370,6 +370,7 @@ form textarea {
 
 .check label::before {
     content: '';
+    appearance: none;
     -webkit-appearance: none;
     background-color: #DCDCDC;
     border: 2px solid #DCDCDC;

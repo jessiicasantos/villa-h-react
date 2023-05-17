@@ -177,6 +177,12 @@
     font-weight: 700;
 }
 
+.menu-event a:hover {
+    background: linear-gradient(270deg, rgb(170 139 78 / 0.3) 0.41%, rgba(170, 139, 78, 0) 100.41%);
+    border-radius: 2px;
+    font-weight: bold;
+}
+
 .menu-event svg {
     margin: 0 14px 0 0;
     vertical-align: middle;
