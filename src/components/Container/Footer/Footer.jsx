@@ -5,8 +5,12 @@ import Section from '../../Section/Section';
 import { ReactComponent as Fish } from '../../../assets/img/fish-icon.svg';
 import BoxContact from './BoxContact/BoxContact';
 import { ReactComponent as DoubleCircle } from './img/double-circle.svg';
+import LogoKindle from './img/logo-kindle.png';
 
 const dataSelect = [
+  {
+    txt: '',
+  },
   {
     txt: 'Pré Wedding',
   },
@@ -110,7 +114,20 @@ const Footer = () => (
               evento.
             </label>
           </div>
+          <button className="btn-dark-blue">Solicitar um orçamento</button>
+          <p>
+            Ao solicitar um orçamento, você está concordando com o envio dos
+            seus dados e a utilização deles conforme a nossa
+            <a href="#">Politica de Privacidade.</a>
+          </p>
         </form>
+      </div>
+      <hr />
+      <div className="copyright">
+        <h6>VILLA H® 2020 - TODOS OS DIREITOS RESERVADOS</h6>
+        <a href="">
+          <img src={LogoKindle} alt="Logo Kindle" />
+        </a>
       </div>
     </div>
   </footer>

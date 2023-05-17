@@ -155,6 +155,7 @@ footer p {
 
 .orcamento {
     display: flex;
+    justify-content: space-between;
 }
 
 .orcamento a {
@@ -170,7 +171,7 @@ footer p {
     background-position: 30% -140%;
 }
 
-.orcamento p {
+.orcamento section p {
     margin: 0 0 34px;
 }
 
@@ -282,4 +283,170 @@ a.theme-gold:hover {
     position: absolute;
     left: 94px;
     bottom: 13px;
+}
+
+form input[type="text"], 
+form input[type="tel"], 
+form input[type="date"],
+form input[type="email"],
+form select,
+form textarea {
+    padding: 14px 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.form-contact {
+    background: #FFFFFF;
+    border-radius: 2px;
+    padding: 41px 46px 43px 48px;
+    height: fit-content;
+    margin: 3em 0 0 7em;
+}
+
+.columns {
+    margin: 0 0 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.columns, .form-contact label {
+    display: flex;
+}
+
+.form-contact label {
+    flex-direction: column;
+    text-align: left;
+    width: -webkit-fill-available;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #474747;
+}
+
+.form-contact label:not(:last-of-type) {
+    margin: 0 7px 0 0;
+}
+
+.form-contact input[type="text"] {
+    font-size: 14px;
+}
+
+.form-contact select {
+    cursor: pointer;
+}
+
+.form-contact label[for="msg"] {
+    margin: 0 0 20px;
+}
+
+.form-contact input,
+.form-contact textarea,
+.form-contact select {
+    border: 1px solid #D0D3D8;
+    border-radius: 3px;
+    margin: 1px 0 0;
+}
+
+.check {
+    margin: 0 0 14px;
+    display: flex;
+    align-items: center;
+}
+
+.check label {
+    position: relative;
+    line-height: 15px;
+    color: #5F5F5F;
+    display: block; 
+    cursor: pointer;
+}
+
+.check input[type="checkbox"] {
+    display: none;
+}
+
+.check label::before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: #DCDCDC;
+    border: 2px solid #DCDCDC;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 9px;
+}
+
+.check input[type="checkbox"]:checked + label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 7.5px;
+    width: 4px;
+    height: 10px;
+    border: solid #1F2338;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.form-contact .btn-dark-blue {
+    margin: 21px 0 27px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form-contact button + p {
+    font-family: 'Heebo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #5F5F5F;
+}
+
+.form-contact button + p > a {
+    margin: 0 0 0 4px;
+    font-weight: bold;
+    color: #AA8B4E;
+    text-decoration: underline;
+}
+
+.form-contact button + p > a:hover {
+    text-decoration: none;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright hr {
+    margin: 54px 0 45px;
+}
+
+
+.copyright h6 {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;    
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.copyright a {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;    
+    color: #FFFFFF;
+    opacity: 0.5;
 }
