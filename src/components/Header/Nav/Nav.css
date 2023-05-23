@@ -30,4 +30,9 @@
     letter-spacing: 0.1em;
     text-decoration: none;
     text-transform: uppercase;
+    transition: all .2s linear;
+}
+
+.nav-link a:hover {
+    color: #AA8B4E;
 }

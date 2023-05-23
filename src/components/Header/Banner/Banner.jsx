@@ -4,7 +4,7 @@ import BannerGallery from './BannerGallery/BannerGallery';
 import './Banner.css';
 
 const Banner = () => (
-  <div className="banner">
+  <div className="banner" id="momentos">
     <BannerSocial />
     <BannerHeadline />
     <BannerGallery />

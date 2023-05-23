@@ -3,7 +3,7 @@ import { ReactComponent as Instagram } from '../img/instagram.svg';
 
 const socials = [
   {
-    href: 'ttps://www.facebook.com/villaheventos/',
+    href: 'https://www.facebook.com/villaheventos/',
     social: <Facebook />,
   },
   {
@@ -15,7 +15,7 @@ const socials = [
 const BannerSocial = () => (
   <div className="socials">
     {socials.map((s, index) => (
-      <a href={s.href} key={`${s}`[index]}>
+      <a href={s.href} key={`${s}`[index]} target="_blank" rel="noreferrer">
         {s.social}
       </a>
     ))}

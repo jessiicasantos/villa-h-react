@@ -47,12 +47,12 @@
     line-height: 25px;
 }
 
-.photo-section > div, 
+.photo-section > div:first-child, 
 .photo-section > section {
     width: 50%;
 }
 
-.photo-section div > img {
+.photo-section > div:first-child > img {
     max-width: 555px;
     width: 100%;
     object-fit: cover;

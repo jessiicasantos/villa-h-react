@@ -15,6 +15,10 @@
     margin: 0 0 9px;
 }
 
+.socials a:hover {
+    filter: invert(54%) sepia(97%) saturate(211%) hue-rotate(2deg) brightness(123%) contrast(93%);
+}
+
 .line-vert {
     position: relative;
     margin: 7px 0 0;
@@ -48,12 +52,28 @@
     color: #DCDCDC;
 }
 
-.more {
+.banner .more {
     padding: 87px 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: left;
     text-decoration: none;
+}
+
+.banner .more svg {
+    transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.01s;
+}
+
+.banner .more p {
+    transition: all 0.3s ease;
+}
+
+.banner .more:hover svg {
+    transform: scale(1.3);
+}
+
+.banner .more:hover p {
+    opacity: 100%;
 }
 
 .more p {

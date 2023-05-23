@@ -1,5 +1,5 @@
 import { ReactComponent as FishLogo } from '../img/fish_logo_rotate.svg';
-import { ReactComponent as TagsCircle } from '../img/tags_circle.svg';
+import { ReactComponent as TagsCircle } from '../img/tags_cicle.svg';
 import Section from '../../../Section/Section';
 import { ReactComponent as Fish } from '../../../../assets/img/fish-icon.svg';
 

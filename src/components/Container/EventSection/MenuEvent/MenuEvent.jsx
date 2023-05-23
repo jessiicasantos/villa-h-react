@@ -83,7 +83,7 @@ const MenuEvent = () => (
   <div className="menu-event theme-dark-blue">
     <ul>
       {links.map((l, i) => (
-        <li key={`${l}`[i]}>
+        <li key={`menu-${i}`}>
           <a href={l.link}>
             {l.svg}
             {l.title}

@@ -99,19 +99,14 @@ const Footer = () => (
             <textarea name="msg-txt" id="msg-txt" cols="30" rows="3"></textarea>
           </label>
           <div className="check">
-            <input
-              type="checkbox"
-              id="check-email"
-              name="check-email"
-              checked
-            />
             <label htmlFor="check-email">
+              <input type="checkbox" id="check-email" name="check-email" />
               Desejo receber o material de fornecedores parceiros por email.
             </label>
           </div>
           <div className="check">
-            <input type="checkbox" id="furniture" name="furniture" checked />
             <label htmlFor="furniture">
+              <input type="checkbox" id="furniture" name="furniture" />
               Tenho interesse em contar com a mobília da Villa H para o meu
               evento.
             </label>

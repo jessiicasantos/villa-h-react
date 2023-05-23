@@ -384,7 +384,7 @@ form textarea {
     margin-right: 9px;
 }
 
-.check input[type="checkbox"]:checked + label::after {
+.check input:checked + label::after {
     content: '';
     display: block;
     position: absolute;

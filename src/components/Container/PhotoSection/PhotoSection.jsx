@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import SalaoPrincipal from '../img/Salao-Principal.png';
 import Loft from '../img/Loft-e-varanda-externa.png';
 import Deck from '../img/Deck-Piscina.png';
 import Gastronomia from '../img/Gastronomia_Villa H.png';
 import Photo from './Photo/Photo';
 import Section from '../../Section/Section';
+import Modal from '../../Modal/Modal';
 
 const columns = [
   {
@@ -32,25 +34,48 @@ const columns = [
   },
 ];
 
-const PhotoSection = () => (
-  <div className="photos-section">
-    {columns.map((c, index) => (
-      <div
-        className={`photo-section photo-${!(index % 2) ? 'left' : 'right'}`}
-        key={`${c}`[index]}
-      >
-        <Photo src={c.photo} alt={c.alt} />
-        <Section
-          className="section section-dark"
-          title={<h2>{c.title}</h2>}
-          text={<p>{c.text}</p>}
-          btn={
-            <button className="btn-dark-blue">VER GALERIA DO AMBIENTE</button>
-          }
-        />
-      </div>
-    ))}
-  </div>
-);
+function PhotoSection() {
+  const [modalIsOpen, setModalIsOpen] = useState('');
+
+  const openModal = () =>
+    modalIsOpen == '' ? setModalIsOpen('open') : setModalIsOpen('');
+
+  const closeModal = () => setModalIsOpen();
+
+  return (
+    <div className="photos-section">
+      {columns.map((c, index) => (
+        <>
+          <div
+            className={`photo-section photo-${!(index % 2) ? 'left' : 'right'}`}
+            key={`${c}`[index]}
+          >
+            <Photo src={c.photo} alt={c.alt} />
+            <Section
+              className="section section-dark"
+              title={<h2>{c.title}</h2>}
+              text={<p>{c.text}</p>}
+              btn={
+                <button
+                  id={`btn-${index}`}
+                  className="btn-dark-blue"
+                  onClick={openModal}
+                >
+                  VER GALERIA DO AMBIENTE
+                </button>
+              }
+            />
+          </div>
+          <Modal
+            id="modal-photos-section"
+            className={modalIsOpen}
+            title={<h2>{c.title}</h2>}
+            gallery={<img src={c.photo} alt={c.alt} onChange={closeModal} />}
+          />
+        </>
+      ))}
+    </div>
+  );
+}
 
 export default PhotoSection;

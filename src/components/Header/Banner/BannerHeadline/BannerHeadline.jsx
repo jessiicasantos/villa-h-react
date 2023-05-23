@@ -20,7 +20,7 @@ const BannerHeadline = () => (
       }
     />
     <CheckedList />
-    <a href="#a_villa-h" className="more">
+    <a href="#a-villa-h" className="more">
       <ArrowDown />
       <p>
         Descubra mais sobre o espaço <br /> e se encante das mais diversas
