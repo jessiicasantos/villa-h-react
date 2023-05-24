@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import SalaoPrincipal from '../img/Salao-Principal.png';
 import Loft from '../img/Loft-e-varanda-externa.png';
 import Deck from '../img/Deck-Piscina.png';
@@ -9,7 +9,7 @@ import Modal from '../../Modal/Modal';
 
 const columns = [
   {
-    id: 'salaoprincipal',
+    id: 'salao-principal',
     photo: SalaoPrincipal,
     title: 'Salão principal e varanda',
     text: 'Ambiente totalmente climatizado, com cobertura e cortina de vidro, possibilitando que cerimônias e comemorações sejam realizadas com a vista deslumbrante que a Villa H proporciona.',
@@ -38,18 +38,22 @@ const columns = [
   },
 ];
 
+// const modalGallery = [
+//   {
+//     id: 'salao-principal',
+//     photo: [SalaoPrincipal, Loft, Deck],
+//   },
+//   {
+//     id: 'loft',
+//     photo: [Gastronomia, Loft, SalaoPrincipal],
+//   },
+// ];
+
 function PhotoSection() {
   const [modalIsOpen, setModalIsOpen] = useState('');
-  const modalRef = useRef(null);
 
-  const openModal = (ev) => {
-    let evTarget = ev.target;
-
-    console.log('open');
-    if (evTarget) {
-      console.log(evTarget);
-    }
-    setModalIsOpen('open');
+  const openModal = (id) => {
+    setModalIsOpen(id);
     document.body.addEventListener('click', closeModal);
   };
 
@@ -58,13 +62,14 @@ function PhotoSection() {
 
     let evTarget = event.target;
 
-    if (evTarget.classList.contains('open')) {
+    if (
+      evTarget.classList.contains('open') ||
+      evTarget.classList.contains('btn-close')
+    ) {
       console.log(event.target);
       setModalIsOpen('');
     }
   };
-
-  // const closeModal = () => setModalIsOpen();
 
   return (
     <div className="photos-section">
@@ -79,17 +84,21 @@ function PhotoSection() {
             title={<h2>{c.title}</h2>}
             text={<p>{c.text}</p>}
             btn={
-              <button className="btn-dark-blue" onClick={openModal}>
+              <button className="btn-dark-blue" onClick={() => openModal(c.id)}>
                 VER GALERIA DO AMBIENTE
               </button>
             }
           />
           <Modal
             id={`modal-${c.id}`}
-            className={modalIsOpen}
-            modalRef={modalRef}
+            className={modalIsOpen === c.id ? 'open' : ''}
             title={<h2>{c.title}</h2>}
             gallery={<img src={c.photo} alt={c.alt} />}
+            closeBtn={
+              <button className="btn-close" onClick={closeModal}>
+                x
+              </button>
+            }
           />
         </div>
       ))}

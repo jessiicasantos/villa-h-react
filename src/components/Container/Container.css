@@ -37,7 +37,7 @@
     max-width: 415px;
 }
 
-.photo-section h2 {
+.photo-section .section > h2 {
     margin: 0 0 11px;
     max-width: 283px;
 }
