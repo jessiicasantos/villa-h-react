@@ -38,17 +38,6 @@ const columns = [
   },
 ];
 
-// const modalGallery = [
-//   {
-//     id: 'salao-principal',
-//     photo: [SalaoPrincipal, Loft, Deck],
-//   },
-//   {
-//     id: 'loft',
-//     photo: [Gastronomia, Loft, SalaoPrincipal],
-//   },
-// ];
-
 function PhotoSection() {
   const [modalIsOpen, setModalIsOpen] = useState('');
 

@@ -1,4 +1,4 @@
-import { Navigation, Pagination, A11y } from 'swiper';
+import { Mousewheel, Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -21,31 +21,21 @@ const modalGallery = [
     photo: [Gastronomia, Loft, SalaoPrincipal],
     alt: '',
   },
-  // {
-  //   id: 'm-galery-1',
-  //   photo: [SalaoPrincipal, Loft, Deck],
-  //   alt: '',
-  // },
-  // {
-  //   id: 'm-galery-2',
-  //   photo: [Gastronomia, Loft, SalaoPrincipal],
-  //   alt: '',
-  // },
 ];
 
-const Modal = ({ id, className, title, /* gallery, */ closeBtn }) => (
+const Modal = ({ id, className, title, closeBtn }) => (
   <div className={`modal ${className}`} id={id}>
     <>{closeBtn}</>
     <div className="modal-wrapper">
       <>{title}</>
       <Swiper
-        modules={[Navigation, Pagination, A11y]}
-        spaceBetween={50}
+        modules={[Mousewheel, Navigation, Pagination, A11y]}
+        spaceBetween={20}
         slidesPerView={3}
+        mousewheel={true}
+        grabCursor={true}
         navigation
         pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
       >
         {modalGallery.map((m, i) => (
           <>
