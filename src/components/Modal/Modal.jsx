@@ -4,26 +4,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import SalaoPrincipal from '../Container/img/Salao-Principal.png';
-import Loft from '../Container/img/Loft-e-varanda-externa.png';
-import Deck from '../Container/img/Deck-Piscina.png';
-import Gastronomia from '../Container/img/Gastronomia_Villa H.png';
 import './Modal.css';
 
-const modalGallery = [
-  {
-    id: 'm-galery-1',
-    photo: [SalaoPrincipal, Loft, Deck],
-    alt: '',
-  },
-  {
-    id: 'm-galery-2',
-    photo: [Gastronomia, Loft, SalaoPrincipal],
-    alt: '',
-  },
-];
-
-const Modal = ({ id, className, title, closeBtn }) => (
+const Modal = ({ id, className, title, closeBtn, photos }) => (
   <div className={`modal ${className}`} id={id}>
     <>{closeBtn}</>
     <div className="modal-wrapper">
@@ -37,14 +20,10 @@ const Modal = ({ id, className, title, closeBtn }) => (
         navigation
         pagination={{ clickable: true }}
       >
-        {modalGallery.map((m, i) => (
-          <>
-            {m?.photo.map((mg) => (
-              <SwiperSlide key={`modal-photo-${i}`}>
-                <img src={mg} alt={m.alt} key={`img-${i}`} />
-              </SwiperSlide>
-            ))}
-          </>
+        {photos?.map((mg, ind) => (
+          <SwiperSlide key={`${mg.id}${ind}`}>
+            <img src={mg} alt={mg.alt} />
+          </SwiperSlide>
         ))}
       </Swiper>
     </div>

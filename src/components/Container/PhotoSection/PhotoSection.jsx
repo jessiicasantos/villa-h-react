@@ -11,6 +11,7 @@ const columns = [
   {
     id: 'salao-principal',
     photo: SalaoPrincipal,
+    photos: [SalaoPrincipal, Loft, Deck],
     title: 'Salão principal e varanda',
     text: 'Ambiente totalmente climatizado, com cobertura e cortina de vidro, possibilitando que cerimônias e comemorações sejam realizadas com a vista deslumbrante que a Villa H proporciona.',
     alt: '',
@@ -18,6 +19,7 @@ const columns = [
   {
     id: 'loft',
     photo: Loft,
+    photos: [Gastronomia, Loft, SalaoPrincipal],
     title: 'Loft e varanda externa',
     text: 'Ambiente parcialmente coberto, com uma varanda externa aberta, possibilitando a realização de cerimônias ao ar livre.',
     alt: '',
@@ -88,6 +90,7 @@ function PhotoSection() {
                 x
               </button>
             }
+            photos={c.photos}
           />
         </div>
       ))}
