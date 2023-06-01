@@ -340,12 +340,20 @@
     padding: 41px 38px 38px 50px;
 }
 
-.anim-photo-card .card.theme-gray > svg {
+.anim-photo-card .card > svg {
     display: none;
 }
 
-.anim-photo-card .card.theme-dark-blue {
+.anim-photo-card .card.active > svg {
+    display: flex;
+}
+
+.anim-photo-card .card.active {
     padding: 47px 56px 50px 50px;
+}
+
+.anim-photo-card .card:not(.active):hover {
+    background: #c1bebe;
 }
 
 .boat {

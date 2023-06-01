@@ -22,7 +22,7 @@ const cards = [
 ];
 
 function InteractivePhotoCard() {
-  const [themeCard, setThemeCard] = useState('theme-gray');
+  const [themeCard, setThemeCard] = useState('');
 
   const changeTheme = (id) => {
     setThemeCard(id);
@@ -34,8 +34,8 @@ function InteractivePhotoCard() {
       <div className="cards">
         {cards.map((c, i) => (
           <Card
-            className={themeCard === c.id ? 'theme-dark-blue' : 'theme-gray'}
-            key={`card-`[i]}
+            className={themeCard === c.id ? 'active' : ''}
+            key={`card-${i}`}
             svg={<SvgWave />}
             title={<h3>{c.title}</h3>}
             text={<p>{c.text}</p>}
