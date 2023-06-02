@@ -63,6 +63,10 @@ footer {
     -webkit-box-orient: vertical;
 }
 
+.swiper-txt-testimonial .more.active {
+    -webkit-line-clamp: initial;
+}
+
 .swiper-txt-testimonial .swiper-slide {
     flex-direction: column;
     margin: 0 0 23px;

@@ -34,7 +34,7 @@ function InteractivePhotoCard() {
       <div className="cards">
         {cards.map((c, i) => (
           <Card
-            className={themeCard === c.id ? 'active' : ''}
+            className={i == 0 || themeCard === c.id ? 'active' : ''}
             key={`card-${i}`}
             svg={<SvgWave />}
             title={<h3>{c.title}</h3>}
