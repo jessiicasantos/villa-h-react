@@ -20,10 +20,10 @@ footer {
     text-align: left;
 }
 
-.swiper-testimonial .swiper-slide {
+/* .swiper-testimonial .swiper-slide {
     max-width: 294px;
     align-items: center;
-}
+} */
 
 .swiper-testimonial img,
 .swiper-testimonial svg {
@@ -106,8 +106,8 @@ footer {
     opacity: 0.8;
 }
 
-.swiper-txt-testimonial .swiper-slide,
-.swiper-testimonial .swiper-slide {
+.swiper-txt-testimonial .swiper-slide/* ,
+.swiper-testimonial .swiper-slide */ {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;

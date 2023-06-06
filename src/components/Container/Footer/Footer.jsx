@@ -1,6 +1,6 @@
 import SwiperTestimonial from './SwiperTestimonial/SwiperTestimonial';
 import './Footer.css';
-import SwiperTxtTestimonial from './SwiperTestimonial/SwiperTxtTestimonial';
+// import SwiperTxtTestimonial from './SwiperTestimonial/SwiperTxtTestimonial';
 import Section from '../../Section/Section';
 import { ReactComponent as Fish } from '../../../assets/img/fish-icon.svg';
 import BoxContact from './BoxContact/BoxContact';
@@ -25,7 +25,7 @@ const dataSelect = [
 const Footer = () => (
   <footer id="depoimentos">
     <div className="container">
-      <SwiperTxtTestimonial />
+      {/* <SwiperTxtTestimonial /> */}
       <SwiperTestimonial />
       <hr />
       <div className="orcamento" id="orcamento">
