@@ -25,7 +25,6 @@ const dataSelect = [
 const Footer = () => (
   <footer id="depoimentos">
     <div className="container">
-      {/* <SwiperTxtTestimonial /> */}
       <SwiperTestimonial />
       <hr />
       <div className="orcamento" id="orcamento">
