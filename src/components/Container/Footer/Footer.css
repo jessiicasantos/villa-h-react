@@ -6,6 +6,8 @@ footer {
 .swiper-testimonial {
     height: 130px;
     margin: 0;
+    padding: 0 111px 0 0;
+    width: 90%;
 }
 
 .swiper-testimonial h4 {
@@ -40,6 +42,10 @@ footer {
     line-height: 44px;
     color: #FFFFFF;
     opacity: 0.8;
+}
+
+.swiper-testimonial .swiper-slide {
+    justify-content: flex-start;
 }
 
 .info-testimonial {
