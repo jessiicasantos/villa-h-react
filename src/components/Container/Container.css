@@ -143,13 +143,10 @@
     margin: 0 0 1.5em;
 }
 
-.event {
-    max-width: 492px;
-    width: 100%;
-}
-
 .menu-event {
     margin: 43px 0 0 0;
+    max-width: 492px;
+    width: 100%;
 }
 
 .menu-event > ul {
@@ -160,7 +157,8 @@
     padding: 0 56px 0 70px;
 }
 
-.menu-event a {
+.menu-event li a,
+.menu-event .btn-event {
     display: block;
     padding: 0px 0 0 38px;
     text-decoration: none;
@@ -169,15 +167,21 @@
     font-size: 16px;
     line-height: 60px;
     color: #FFFFFF;
+    width: 100%;
+    text-align: left;
 }
 
-.menu-event a.active {
+.menu-event li a.active,
+.menu-event .btn-event.active {
     background: linear-gradient(270deg, rgb(170 139 78 / 0.3) 0.41%, rgba(170, 139, 78, 0) 100.41%);
     border-radius: 2px;
     font-weight: 700;
 }
 
-.menu-event a:hover {
+.menu-event li a:hover,
+.menu-event li.active a,
+.menu-event .btn-event:hover,
+.menu-event .active .btn-event {
     background: linear-gradient(270deg, rgb(170 139 78 / 0.3) 0.41%, rgba(170, 139, 78, 0) 100.41%);
     border-radius: 2px;
     font-weight: bold;

@@ -3,10 +3,26 @@ import { ReactComponent as Bride } from '../../../../assets/img/bride-icon.svg';
 import MenuEvent from '../MenuEvent/MenuEvent';
 import Card from '../../../Card/Card';
 import SwiperEvent from '../SwiperEvent/SwiperEvent';
+import { useState } from 'react';
 
 const cardInfoList = [
   {
+    id: 'preWed',
     className: 'active',
+    svg: <Drink />,
+    tag: <h5 className="tag"></h5>,
+    title: <h3>Pré Wedding</h3>,
+    text: (
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+        nostrum. Officiis eius cupiditate repudiandae distinctio officia
+        tempore, perferendis voluptatem magnam, blanditiis magni laboriosam.
+        Explicabo incidunt delectus quae nemo, vitae atque!
+      </p>
+    ),
+  },
+  {
+    id: 'dayUse',
     svg: <Drink />,
     tag: <h5 className="tag"></h5>,
     title: <h3>Day Use</h3>,
@@ -36,28 +52,39 @@ const cardInfoList = [
   },
 ];
 
-const Event = () => (
-  <div className="event">
-    <MenuEvent />
-    {cardInfoList.map((c, i) => (
-      <Card
-        className={`card-event theme-gray ${c.className}`}
-        key={`${c}`[i]}
-        svg={c.svg}
-        tag={c.tag}
-        title={c.title}
-        text={c.text}
-        btn={
-          <a href="#orcamento" className="btn-dark-blue">
-            SOLICITAR UM ORÇAMENTO
-          </a>
-        }
-        line={<hr />}
-        subtitle={<h6>Veja fotos desse evento</h6>}
-        gallery={<SwiperEvent />}
-      />
-    ))}
-  </div>
-);
+const Event = () => {
+  const [openCard, setOpenCard] = useState(cardInfoList[0].id);
+
+  const handleOpenCard = (id) => {
+    console.log('test click');
+    setOpenCard(id, !openCard);
+  };
+
+  return (
+    <div className="event">
+      <MenuEvent onClick={handleOpenCard} />
+      {cardInfoList.map((c, i) => (
+        <Card
+          className={`card-event theme-gray ${
+            openCard === c.id ? 'active' : ''
+          }`}
+          key={`${c}`[i]}
+          svg={c.svg}
+          tag={c.tag}
+          title={c.title}
+          text={c.text}
+          btn={
+            <a href="#orcamento" className="btn-dark-blue">
+              SOLICITAR UM ORÇAMENTO
+            </a>
+          }
+          line={<hr />}
+          subtitle={<h6>Veja fotos desse evento</h6>}
+          gallery={<SwiperEvent />}
+        />
+      ))}
+    </div>
+  );
+};
 
 export default Event;

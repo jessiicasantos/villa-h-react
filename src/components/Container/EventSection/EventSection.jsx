@@ -1,8 +1,9 @@
 import { ReactComponent as Fish } from '../../../assets/img/fish-icon.svg';
 import Section from '../../Section/Section';
-import Event from './Event/Event';
+// import Event from './Event/Event';
+import MenuEvent from './MenuEvent/MenuEvent';
 
-const EventSection = () => (
+const EventSection = ({ data }) => (
   <div className="container event-section" id="eventos">
     <Section
       svg={<Fish />}
@@ -20,7 +21,8 @@ const EventSection = () => (
         </p>
       }
     />
-    <Event />
+    {/* <Event data={data} /> */}
+    <MenuEvent data={data} />
   </div>
 );
 

@@ -77,7 +77,6 @@ const InfoTestimonial = () => {
         modules={[Controller, Navigation]}
         onSwiper={setSecondSwiper}
         controller={{ control: firstSwiper }}
-        // spaceBetween={15}
         slidesPerView={3}
         slideToClickedSlide={true}
         loop={true}

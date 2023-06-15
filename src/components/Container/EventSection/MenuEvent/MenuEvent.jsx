@@ -10,88 +10,161 @@ import { ReactComponent as Handshake } from '../../../../assets/img/handshake-ic
 import { ReactComponent as PartyBuild } from '../../../../assets/img/party-build-icon.svg';
 import { ReactComponent as Foot } from '../../../../assets/img/foot-icon.svg';
 import { ReactComponent as Ring } from '../../../../assets/img/ring-icon.svg';
+import Card from '../../../Card/Card';
+import SwiperEvent from '../SwiperEvent/SwiperEvent';
+import { useState } from 'react';
 
 const links = [
   {
     svg: <PreWedding />,
-    link: '#prewed',
+    id: 'preWed',
     title: 'Pré Wedding',
+    className: 'active',
+    tag: <h5 className="tag"></h5>,
+    text: (
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+        nostrum. Officiis eius cupiditate repudiandae distinctio officia
+        tempore, perferendis voluptatem magnam, blanditiis magni laboriosam.
+        Explicabo incidunt delectus quae nemo, vitae atque!
+      </p>
+    ),
   },
   {
     svg: <Bride />,
-    link: '#prewed',
+    id: 'elopWed',
     title: 'Elopement Wedding',
+    tag: <h5 className="tag"></h5>,
+    text: (
+      <p>
+        É realizada uma cerimônia, sendo indicado para os casais que desejam
+        viver intensamente o romantismo do momento. O ideal é que seja realizado
+        apenas com os noivos, podendo contar com um número máximo de 10 pessoas,
+        incluindo celebrante e fotógrafo. Os locais escolhidos para essa
+        celebração normalmente conta com um visual de maravilhoso e a Villa H se
+        encaixa perfeitamente, contribuindo com fotos incríveis deste dia.
+      </p>
+    ),
   },
   {
     svg: <Couple />,
-    link: '#prewed',
+    id: 'miniWed',
     title: 'Mini Wedding',
   },
   {
     svg: <StreamIcon />,
-    link: '#prewed',
+    id: 'smallWed',
     title: 'Small Wedding & Streaming',
   },
   {
     svg: <CakeHeart />,
-    link: '#prewed',
+    id: 'casaTrad',
     title: 'Casamento Tradicional',
   },
   {
     svg: <Camera />,
-    link: '#prewed',
+    id: 'sessao',
     title: 'Sessão Fotográfica e Vídeo',
   },
   {
     svg: <GlassDrink />,
-    link: '#prewed',
+    id: 'dayUse',
     title: 'Day Use',
+    tag: <h5 className="tag"></h5>,
+    text: (
+      <p>
+        Day use é uma modalidade de hospedagem sem pernoite, podendo-se
+        aproveitar a estrutura do local. Além da nossa vista maravilhosa, você
+        pode aproveitar um dia de sol na piscina da Villa H. Assim, você pode
+        curtir ao máximo tudo o que o nosso espaço tem a oferecer
+      </p>
+    ),
   },
   {
     svg: <BreakFast />,
-    link: '#prewed',
+    id: 'break',
     title: 'Café da Manhã',
   },
   {
     svg: <Handshake />,
-    link: '#prewed',
+    id: 'eventoCorp',
     title: 'Evento Corporativo',
   },
   {
     svg: <PartyBuild />,
-    link: '#prewed',
+    id: 'aniversario',
     title: 'Aniversário/Festa 15 anos',
   },
   {
     svg: <Foot />,
-    link: '#prewed',
+    id: 'batizado',
     title: 'Batizado',
   },
   {
     svg: <Ring />,
-    link: '#prewed',
+    id: 'noivado',
     title: 'Noivado',
   },
   {
     svg: <Camera />,
-    link: '#prewed',
+    id: 'live',
     title: 'Live',
   },
 ];
 
-const MenuEvent = () => (
-  <div className="menu-event theme-dark-blue">
-    <ul>
-      {links.map((l, i) => (
-        <li key={`menu-${i}`}>
-          <a href={l.link}>
-            {l.svg}
-            {l.title}
-          </a>
-        </li>
+const MenuEvent = () => {
+  const [isActive, setIsActive] = useState(links[0].id);
+
+  const handleIsActive = (id) => {
+    setIsActive(id, !isActive);
+  };
+
+  return (
+    <div className="menu-event theme-dark-blue">
+      <ul>
+        {links.map((l, i) => (
+          <li key={`menu-${i}`} className={isActive === l.id ? 'active' : ''}>
+            <button
+              className="btn-event"
+              href={l.id}
+              onClick={() => handleIsActive(l.id)}
+            >
+              {l.svg}
+              {l.title}
+            </button>
+          </li>
+        ))}
+        <Event cardIsActive={isActive} />
+      </ul>
+    </div>
+  );
+};
+
+const Event = ({ cardIsActive }) => {
+  return (
+    <div className="event">
+      {links.map((c, i) => (
+        <Card
+          className={`card-event theme-gray ${
+            cardIsActive === c.id ? 'active' : ''
+          }`}
+          key={`${c}`[i]}
+          svg={c.svg}
+          tag={c.tag}
+          title={<h3>{c.title}</h3>}
+          text={c.text}
+          btn={
+            <a href="#orcamento" className="btn-dark-blue">
+              SOLICITAR UM ORÇAMENTO
+            </a>
+          }
+          line={<hr />}
+          subtitle={<h6>Veja fotos desse evento</h6>}
+          gallery={<SwiperEvent />}
+        />
       ))}
-    </ul>
-  </div>
-);
+    </div>
+  );
+};
 
 export default MenuEvent;

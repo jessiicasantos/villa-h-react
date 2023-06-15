@@ -22,7 +22,7 @@ const cards = [
 ];
 
 function InteractivePhotoCard() {
-  const [themeCard, setThemeCard] = useState('vista');
+  const [themeCard, setThemeCard] = useState(cards[0].id);
 
   const changeTheme = (id) => {
     setThemeCard(id, !themeCard);
