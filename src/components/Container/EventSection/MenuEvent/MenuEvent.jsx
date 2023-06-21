@@ -13,6 +13,10 @@ import { ReactComponent as Ring } from '../../../../assets/img/ring-icon.svg';
 import Card from '../../../Card/Card';
 import SwiperEvent from '../SwiperEvent/SwiperEvent';
 import { useState } from 'react';
+import SlidePre1 from '../img/elop-wedding-happy-couple.png';
+import SlidePre2 from '../img/elop-wedding-photography.png';
+import SlidePre3 from '../img/elop-wedding-up.png';
+import SlidePre4 from '../img/elop-wedding.png';
 
 const links = [
   {
@@ -29,6 +33,13 @@ const links = [
         Explicabo incidunt delectus quae nemo, vitae atque!
       </p>
     ),
+    gallery: [SlidePre1, SlidePre2, SlidePre3, SlidePre4],
+    listAltText: [
+      'Mesa com paisagem paradisíaca e flores.',
+      'Confraternização com paisagem paradisíaca ao pôr do sol.',
+      'Paisagem do mar e barco ao pôr do sol.',
+      'Sala de visitas.',
+    ],
   },
   {
     svg: <Bride />,
@@ -45,6 +56,13 @@ const links = [
         encaixa perfeitamente, contribuindo com fotos incríveis deste dia.
       </p>
     ),
+    gallery: [SlidePre4, SlidePre2, SlidePre1, SlidePre3, SlidePre2],
+    listAltText: [
+      'SlidePre4 Alt',
+      'SlidePre2 Alt',
+      'SlidePre1 Alt',
+      'SlidePre3 Alt',
+    ],
   },
   {
     svg: <Couple />,
@@ -148,7 +166,7 @@ const Event = ({ cardIsActive }) => {
           className={`card-event theme-gray ${
             cardIsActive === c.id ? 'active' : ''
           }`}
-          key={`${c}`[i]}
+          key={`c-${i}`}
           svg={c.svg}
           tag={c.tag}
           title={<h3>{c.title}</h3>}
@@ -160,7 +178,7 @@ const Event = ({ cardIsActive }) => {
           }
           line={<hr />}
           subtitle={<h6>Veja fotos desse evento</h6>}
-          gallery={<SwiperEvent />}
+          slides={<SwiperEvent gallery={c.gallery} />}
         />
       ))}
     </div>

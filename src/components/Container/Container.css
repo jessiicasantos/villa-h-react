@@ -246,6 +246,7 @@
     max-width: 221px;
     height: 150px;
     object-fit: cover;
+    color: #5F5F5F;
 }
 
 .swiper-event .swiper-button-prev::after, .swiper-event .swiper-button-next::after {

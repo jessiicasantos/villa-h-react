@@ -1,6 +1,5 @@
 import { ReactComponent as Fish } from '../../../assets/img/fish-icon.svg';
 import Section from '../../Section/Section';
-// import Event from './Event/Event';
 import MenuEvent from './MenuEvent/MenuEvent';
 
 const EventSection = ({ data }) => (
@@ -21,7 +20,6 @@ const EventSection = ({ data }) => (
         </p>
       }
     />
-    {/* <Event data={data} /> */}
     <MenuEvent data={data} />
   </div>
 );

@@ -1,5 +1,15 @@
-// eslint-disable-next-line prettier/prettier
-const Card = ({ className, svg, tag, title, text, btn, line, subtitle, gallery, onClick }) => (
+const Card = ({
+  className,
+  svg,
+  tag,
+  title,
+  text,
+  btn,
+  line,
+  subtitle,
+  slides,
+  onClick,
+}) => (
   <div className={`card ${className}`} onClick={onClick}>
     <>{svg}</>
     <>{tag}</>
@@ -8,7 +18,7 @@ const Card = ({ className, svg, tag, title, text, btn, line, subtitle, gallery, 
     <>{btn}</>
     <>{line}</>
     <>{subtitle}</>
-    <>{gallery}</>
+    <>{slides}</>
   </div>
 );
 
