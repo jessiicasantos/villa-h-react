@@ -198,7 +198,8 @@
     top: 513px;
     left: -17px;
     padding: 65px 66px 63px 69px;
-    max-width: 689px;
+    max-width: 549px;
+    width: -webkit-fill-available;
 }
 
 .card-event.active {
@@ -213,6 +214,9 @@
 
 .card-event svg {
     margin: 0 0 19px;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 .card-event .tag {

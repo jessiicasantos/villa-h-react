@@ -55,3 +55,10 @@ a.btn-dark-blue {
     background-color: #AA8B4E;
     color: #ffffff;
 }
+
+.card-event a.btn-dark-blue {
+    margin: 35px 0 0;
+    padding: 17px 26px 16px 27px;
+    display: flex;
+    width: fit-content;
+}

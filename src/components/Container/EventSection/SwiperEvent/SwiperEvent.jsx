@@ -8,6 +8,8 @@ import { Mousewheel, Keyboard, Navigation } from 'swiper';
 const SwiperEvent = ({ gallery }) => {
   return (
     <>
+      <hr />
+      <h6>Veja fotos desse evento</h6>
       <Swiper
         mousewheel={true}
         keyboard={{
@@ -19,13 +21,14 @@ const SwiperEvent = ({ gallery }) => {
         slidesPerView={2.4}
         grabCursor={true}
         className="swiper-event"
-        gallery={gallery}
       >
-        {gallery?.map((g, index) => (
-          <SwiperSlide key={`g-${index}`}>
-            <img src={g} /* alt={s.listAltText[index]} */ />
-          </SwiperSlide>
-        ))}
+        {gallery?.map((g, index) => {
+          return (
+            <SwiperSlide key={`g-${index}`}>
+              <img src={g} /* alt={g.listAltText[index]} */ />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </>
   );

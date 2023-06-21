@@ -45,7 +45,6 @@ const links = [
     svg: <Bride />,
     id: 'elopWed',
     title: 'Elopement Wedding',
-    tag: <h5 className="tag"></h5>,
     text: (
       <p>
         É realizada uma cerimônia, sendo indicado para os casais que desejam
@@ -176,9 +175,7 @@ const Event = ({ cardIsActive }) => {
               SOLICITAR UM ORÇAMENTO
             </a>
           }
-          line={<hr />}
-          subtitle={<h6>Veja fotos desse evento</h6>}
-          slides={<SwiperEvent gallery={c.gallery} />}
+          slides={c.gallery ? <SwiperEvent gallery={c.gallery} /> : null}
         />
       ))}
     </div>
