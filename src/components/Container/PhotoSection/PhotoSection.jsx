@@ -3,6 +3,10 @@ import SalaoPrincipal from '../img/Salao-Principal.png';
 import Loft from '../img/Loft-e-varanda-externa.png';
 import Deck from '../img/Deck-Piscina.png';
 import Gastronomia from '../img/Gastronomia_Villa H.png';
+import Aurora from '../img/beautiful-green-red-aurora.jpg';
+import Bird from '../img/bird.png';
+import Restaurant from '../img/restaurant-mesa-montada.png';
+import Jantar from '../img/jantar-na-praia.png';
 import Photo from './Photo/Photo';
 import Section from '../../Section/Section';
 import Modal from '../../Modal/Modal';
@@ -26,6 +30,14 @@ const columns = [
         url: Deck,
         alt: 'Deck',
       },
+      {
+        url: Aurora,
+        alt: 'Aurora Boreal',
+      },
+      {
+        url: Bird,
+        alt: 'Pássaro voando entre as árvores',
+      },
     ],
   },
   {
@@ -45,6 +57,14 @@ const columns = [
       {
         url: SalaoPrincipal,
         alt: 'Salão Principal',
+      },
+      {
+        url: Restaurant,
+        alt: 'Restaurante com mesa branca e buquê',
+      },
+      {
+        url: Jantar,
+        alt: 'Janta à beira da praia',
       },
     ],
   },
@@ -110,7 +130,9 @@ function PhotoSection() {
           />
           <Modal
             id={`modal-${c.id}`}
-            className={modalIsOpen === c.id ? 'open' : ''}
+            className={`modal-photoSection ${
+              modalIsOpen === c.id ? 'open' : ''
+            }`}
             title={<h2>{c.title}</h2>}
             photo={<img src={c.photo} alt={c.alt} />}
             closeBtn={

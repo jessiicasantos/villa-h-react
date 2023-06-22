@@ -53,3 +53,12 @@
     background: #AA8B4E;
     color: #FFFFFF;
 }
+
+/* modal-photoSection */
+.modal-photoSection .swiper-slide > img {
+    max-width: 555px;
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    object-position: bottom;
+}
