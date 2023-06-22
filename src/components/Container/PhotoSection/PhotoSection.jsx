@@ -98,9 +98,14 @@ function PhotoSection() {
             title={<h2>{c.title}</h2>}
             text={<p>{c.text}</p>}
             btn={
-              <button className="btn-dark-blue" onClick={() => openModal(c.id)}>
-                VER GALERIA DO AMBIENTE
-              </button>
+              c.gallery ? (
+                <button
+                  className="btn-dark-blue"
+                  onClick={() => openModal(c.id)}
+                >
+                  VER GALERIA DO AMBIENTE
+                </button>
+              ) : null
             }
           />
           <Modal
