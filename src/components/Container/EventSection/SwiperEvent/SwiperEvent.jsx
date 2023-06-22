@@ -25,7 +25,7 @@ const SwiperEvent = ({ gallery }) => {
         {gallery?.map((g, index) => {
           return (
             <SwiperSlide key={`g-${index}`}>
-              <img src={g} /* alt={g.listAltText[index]} */ />
+              <img src={g.url} alt={g.alt} />
             </SwiperSlide>
           );
         })}

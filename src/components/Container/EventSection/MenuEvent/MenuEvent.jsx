@@ -33,12 +33,23 @@ const links = [
         Explicabo incidunt delectus quae nemo, vitae atque!
       </p>
     ),
-    gallery: [SlidePre1, SlidePre2, SlidePre3, SlidePre4],
-    listAltText: [
-      'Mesa com paisagem paradisíaca e flores.',
-      'Confraternização com paisagem paradisíaca ao pôr do sol.',
-      'Paisagem do mar e barco ao pôr do sol.',
-      'Sala de visitas.',
+    gallery: [
+      {
+        url: SlidePre1,
+        alt: 'Mesa com paisagem paradisíaca e flores.',
+      },
+      {
+        url: SlidePre2,
+        alt: 'Confraternização com paisagem paradisíaca ao pôr do sol.',
+      },
+      {
+        url: SlidePre3,
+        alt: 'Paisagem do mar e barco ao pôr do sol.',
+      },
+      {
+        url: SlidePre4,
+        alt: 'Sala de visitas.',
+      },
     ],
   },
   {
@@ -55,12 +66,27 @@ const links = [
         encaixa perfeitamente, contribuindo com fotos incríveis deste dia.
       </p>
     ),
-    gallery: [SlidePre4, SlidePre2, SlidePre1, SlidePre3, SlidePre2],
-    listAltText: [
-      'SlidePre4 Alt',
-      'SlidePre2 Alt',
-      'SlidePre1 Alt',
-      'SlidePre3 Alt',
+    gallery: [
+      {
+        url: SlidePre4,
+        alt: 'SlidePre4 Alt',
+      },
+      {
+        url: SlidePre2,
+        alt: 'SlidePre2 Alt',
+      },
+      {
+        url: SlidePre1,
+        alt: 'SlidePre1 Alt',
+      },
+      {
+        url: SlidePre3,
+        alt: 'SlidePre3 Alt',
+      },
+      {
+        url: SlidePre2,
+        alt: 'SlidePre2 Alt',
+      },
     ],
   },
   {
@@ -175,6 +201,7 @@ const Event = ({ cardIsActive }) => {
               SOLICITAR UM ORÇAMENTO
             </a>
           }
+          // slides={c.gallery ? <SwiperEvent gallery={c.gallery} /> : null}
           slides={c.gallery ? <SwiperEvent gallery={c.gallery} /> : null}
         />
       ))}
