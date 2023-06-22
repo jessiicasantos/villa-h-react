@@ -77,3 +77,8 @@
     font-size: 15px;
     font-weight: 600;
   }
+
+  .swiper .swiper-slide > img,
+  .modal {
+    user-select: none;
+  }

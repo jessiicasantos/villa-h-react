@@ -7,7 +7,7 @@ const More = ({ data }) => {
     setSeeMore(!seeMore);
   };
 
-  const classN = `more ${seeMore ? 'active' : ''}`;
+  const classN = `more${seeMore ? ' active' : ''}`;
   const label = seeMore ? 'Ver menos -' : 'Ver mais +';
 
   return (
