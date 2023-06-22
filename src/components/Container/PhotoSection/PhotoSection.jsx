@@ -11,18 +11,42 @@ const columns = [
   {
     id: 'salao-principal',
     photo: SalaoPrincipal,
-    photos: [SalaoPrincipal, Loft, Deck],
     title: 'Salão principal e varanda',
     text: 'Ambiente totalmente climatizado, com cobertura e cortina de vidro, possibilitando que cerimônias e comemorações sejam realizadas com a vista deslumbrante que a Villa H proporciona.',
-    alt: '',
+    gallery: [
+      {
+        url: SalaoPrincipal,
+        alt: 'Salão Principal',
+      },
+      {
+        url: Loft,
+        alt: 'Loft',
+      },
+      {
+        url: Deck,
+        alt: 'Deck',
+      },
+    ],
   },
   {
     id: 'loft',
     photo: Loft,
-    photos: [Gastronomia, Loft, SalaoPrincipal],
     title: 'Loft e varanda externa',
     text: 'Ambiente parcialmente coberto, com uma varanda externa aberta, possibilitando a realização de cerimônias ao ar livre.',
-    alt: '',
+    gallery: [
+      {
+        url: Gastronomia,
+        alt: 'Gastronomia',
+      },
+      {
+        url: Loft,
+        alt: 'loft',
+      },
+      {
+        url: SalaoPrincipal,
+        alt: 'Salão Principal',
+      },
+    ],
   },
   {
     id: 'deck',
@@ -57,7 +81,6 @@ function PhotoSection() {
       evTarget.classList.contains('open') ||
       evTarget.classList.contains('btn-close')
     ) {
-      console.log(event.target);
       setModalIsOpen('');
     }
   };
@@ -84,13 +107,13 @@ function PhotoSection() {
             id={`modal-${c.id}`}
             className={modalIsOpen === c.id ? 'open' : ''}
             title={<h2>{c.title}</h2>}
-            gallery={<img src={c.photo} alt={c.alt} />}
+            photo={<img src={c.photo} alt={c.alt} />}
             closeBtn={
               <button className="btn-close" onClick={closeModal}>
                 x
               </button>
             }
-            photos={c.photos}
+            gallery={c.gallery}
           />
         </div>
       ))}

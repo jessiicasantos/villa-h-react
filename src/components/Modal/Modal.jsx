@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import './Modal.css';
 
-const Modal = ({ id, className, title, closeBtn, photos }) => (
+const Modal = ({ id, className, title, closeBtn, gallery }) => (
   <div className={`modal ${className}`} id={id}>
     <>{closeBtn}</>
     <div className="modal-wrapper">
@@ -20,9 +20,9 @@ const Modal = ({ id, className, title, closeBtn, photos }) => (
         navigation
         pagination={{ clickable: true }}
       >
-        {photos?.map((mg, ind) => (
+        {gallery?.map((mg, ind) => (
           <SwiperSlide key={`${mg.id}${ind}`}>
-            <img src={mg} alt={mg.alt} />
+            <img src={mg.url} alt={mg.alt} />
           </SwiperSlide>
         ))}
       </Swiper>
