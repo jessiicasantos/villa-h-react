@@ -8,6 +8,10 @@
     max-width: 1110px;
 }
 
+.top-nav.scroll {
+    position: fixed;
+}
+
 .nav-logo a {
     padding: 40px 50px 32px 0;
 }
