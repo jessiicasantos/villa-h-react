@@ -109,4 +109,10 @@
 
 .anim-photo-card .card.active h3 {
     color: #FFFFFF;
-  }
+}
+
+.boat {
+    max-width: 1088px;
+    max-height: 858px;
+    object-fit: cover;
+}
