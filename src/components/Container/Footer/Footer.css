@@ -1,6 +1,6 @@
 footer {
     background: #1F2338;
-    padding: 114px 15px 47px;
+    padding: 114px 0 47px;
 }
 
 .swiper-testimonial {
@@ -306,7 +306,8 @@ form textarea {
     border-radius: 2px;
     padding: 41px 46px 43px 48px;
     height: fit-content;
-    margin: 3em 0 0 7em;
+    margin: 4% 0 0 15px;
+    max-width: 616px;
 }
 
 .columns {
@@ -455,4 +456,10 @@ form textarea {
     line-height: 18px;    
     color: #FFFFFF;
     opacity: 0.5;
+}
+
+@media screen and (max-width: 1366px) {
+    footer h3 {
+        margin: 0 0 18px;
+    }
 }
