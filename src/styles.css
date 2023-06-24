@@ -13,6 +13,7 @@
     color: #000;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
   
   .swiper {
@@ -31,7 +32,7 @@
   }
 
   .swiper-gallery .swiper-slide {
-    height: auto;
+    height: 76.5vh;
     max-width: 803px;
   }
   

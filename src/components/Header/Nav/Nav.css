@@ -1,6 +1,6 @@
 .top-nav {
     margin: 0 auto;
-    padding: 43px 0 0;
+    padding: 43px 15px 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,7 +13,7 @@
 }
 
 .nav-logo a {
-    padding: 40px 50px 32px 0;
+    padding: 40px 50px 32px 15px;
 }
 
 .nav-logo a {
@@ -39,4 +39,14 @@
 
 .nav-link a:hover {
     color: #AA8B4E;
+}
+
+@media screen and (max-width: 1366px) {
+    .nav-logo a {
+        padding: 40px 15px 32px 15px;
+    }
+
+    .nav-logo svg {
+        width: 23vw;
+    }
 }

@@ -1,6 +1,7 @@
 .banner {
-    padding: 0 0 0 283px;
+    padding: 40px 0 0 283px;
     display: flex;
+    align-items: flex-end;
 }
 
 .socials {
@@ -36,7 +37,7 @@
 }
 
 .banner-head {
-    padding: 0 0 0 7.5%;
+    padding: 0 13% 0 7%;
     max-width: 410px;
     width: 100%;
 }
@@ -90,8 +91,12 @@
     margin: 0 0 19px;
 }
 
-.swiper-gallery {
-    margin: auto 0 0 auto;
-    max-width: 941px;
-    max-height: 604px;
+@media screen and (max-width: 1366px) {
+    .banner {
+        padding: 40px 0 0 15px;
+    }
+
+    .banner-head {
+        padding: 0 25px;
+    }
 }
