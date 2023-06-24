@@ -2,16 +2,3 @@
     margin: 0 auto;
     max-width: 1338px;
 }
-
-.gallery-list {
-    margin: 121px 0 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.gallery-list img {
-    max-width: 370px;
-    max-height: 370px;
-    object-fit: cover;
-}

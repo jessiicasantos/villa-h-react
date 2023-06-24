@@ -16,3 +16,9 @@
     padding: 22px 24px 21px;
     font-size: 12.5px;
 }
+
+@media screen and (max-width: 1366px) {
+    .swiper-gallery .swiper-slide {
+        max-width: initial;
+    }
+}
