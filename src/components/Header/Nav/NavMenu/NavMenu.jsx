@@ -16,10 +16,6 @@ const menus = [
     text: 'Gastronomia',
   },
   {
-    href: '#fotos',
-    text: 'Fotos',
-  },
-  {
     href: '#depoimentos',
     text: 'Depoimentos',
   },
