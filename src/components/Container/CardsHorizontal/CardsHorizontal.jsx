@@ -3,6 +3,7 @@ import { ReactComponent as CakeIcon } from '../../../assets/img/cake-icon.svg';
 import { ReactComponent as PartyIcon } from '../../../assets/img/party-icon.svg';
 import { ReactComponent as CookIcon } from '../../../assets/img/cook-icon.svg';
 import { ReactComponent as MusicIcon } from '../../../assets/img/music-icon.svg';
+import './CardsHorizontal.css';
 
 const cards = [
   {
