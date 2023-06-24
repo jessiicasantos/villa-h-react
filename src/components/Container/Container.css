@@ -3,25 +3,6 @@
     max-width: 1338px;
 }
 
-.benefits {
-    display: flex;
-    align-items: center;
-    padding: 161px 0 99px;
-}
-
-.benefits .section {
-    max-width: 417px;
-    padding: 0 125px 0 0;
-}
-
-.benefits h2 {
-    margin: 0 0 34px;
-}
-
-.benefits h6 {
-    margin: 121px 0 19px 16px;
-}
-
 .photos-section {
     padding: 0 0 172px;
 }

@@ -72,20 +72,6 @@ h2 {
   letter-spacing: 0.01em;
 }
 
-section p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.section-dark h2 {
-  color: #20334F;
-}
-
-.section-dark p {
-  color: #5F5F5F;
-}
-
 .theme-dark-blue,
 .anim-photo-card .card.active {
   background: #1F2338;

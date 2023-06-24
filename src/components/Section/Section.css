@@ -1,27 +1,13 @@
-.section-benefits {
-    max-width: 540px;
-}
-
-.benefits .section svg {
-    margin: 0 0 26px;
-}
-  
-.section-benefits ul > li {
-    margin: 0 0 12px;
-    padding: 21px 97px 28px 29px;
-    background: #E9E9E9;
-    border-radius: 2px;
-    display: flex;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif;
+section p {
     font-weight: 400;
     font-size: 18px;
-    line-height: 25px;
-    color: #5F5F5F;
-}
+    line-height: 30px;
+  }
   
-.section-benefits svg {
-    margin: 0 27px 0 0;
-    width: 54px;
-    height: 49px;
-}
+  .section-dark h2 {
+    color: #20334F;
+  }
+  
+  .section-dark p {
+    color: #5F5F5F;
+  }

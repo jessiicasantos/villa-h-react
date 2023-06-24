@@ -45,6 +45,16 @@ const SwiperGallery = () => {
         slidesPerView={'auto'}
         grabCursor={true}
         className="swiper-gallery"
+        breakpoints={{
+          1366: {
+            spaceBetween: 15,
+            slidesPerView: 'auto',
+          },
+          319: {
+            spaceBetween: 0,
+            slidesPerView: 1,
+          },
+        }}
       >
         {slides.map((s, index) => (
           <SwiperSlide key={`${s}`[index]}>
