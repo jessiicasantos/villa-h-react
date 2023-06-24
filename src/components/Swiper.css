@@ -1,0 +1,18 @@
+.swiper-event {
+    max-width: 553px;
+}
+
+.swiper-event img {
+    max-width: 221px;
+    height: 150px;
+    object-fit: cover;
+    color: #5F5F5F;
+}
+
+.swiper-event .swiper-button-prev::after, .swiper-event .swiper-button-next::after {
+    padding: 33px 37px 32px 36px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 22px 24px 21px;
+    font-size: 12.5px;
+}

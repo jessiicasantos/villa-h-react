@@ -34,6 +34,24 @@ button {
   outline: 0;
 }
 
+.tag {
+  position: relative;
+}
+
+.tag::after {
+  content: "Em breve";
+  position: absolute;
+  top: -33px;
+  border: 1px solid #AA8B4E;
+  border-radius: 5px;
+  padding: 0px 17px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 section p, h6, button, .checked-list {
   font-family: 'Open Sans', sans-serif;
 }
@@ -75,10 +93,6 @@ h2 {
 .theme-dark-blue,
 .anim-photo-card .card.active {
   background: #1F2338;
-  color: #FFFFFF;
-}
-
-.anim-photo-card .card.active h3 {
   color: #FFFFFF;
 }
 

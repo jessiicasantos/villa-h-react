@@ -1,0 +1,112 @@
+.section-bg-photo {
+    background-image: url('../SectionBGPhoto/img/champagne-mountain-sea.png');
+    background-repeat: no-repeat;
+    background-position: right 351px;
+    padding: 350.4px 0 0;
+    max-width: 1542px;
+    width: 100%;
+    /* temporary */
+    overflow: hidden;
+}
+
+.section-bg {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-bg section > svg {
+    margin: 0 0 19px;
+}
+
+.section-bg section {
+    max-width: 462px;
+}
+
+.section-bg h2 {
+    margin: 0 0 27px;
+    font-weight: 400;
+}
+
+.section-bg p {
+    margin: 0 0 65px;
+}
+
+.fish-rotate-wrapper {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fish-rotate {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-circle, .fish-logo {
+    position: absolute;
+}
+
+.anim-photo-card {
+    position: relative;
+    display: flex;
+} 
+
+.anim-photo-card .cards {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    max-width: 561px;
+}
+
+.anim-photo-card .card {
+    margin: 0 0 9px;
+}
+
+.anim-photo-card .card {
+    margin: 0 0 7px;
+}
+
+.anim-photo-card .card svg {
+    margin: 0 0 21px;
+}
+
+.anim-photo-card .card h3 {
+    margin: 0 0 21px;
+    font-size: 28px;
+}
+
+.anim-photo-card .card p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.anim-photo-card .card {
+    padding: 41px 38px 38px 50px;
+}
+
+.anim-photo-card .card > svg {
+    display: none;
+}
+
+.anim-photo-card .card.active > svg {
+    display: flex;
+}
+
+.anim-photo-card .card.active {
+    padding: 47px 56px 50px 50px;
+}
+
+.anim-photo-card .card:not(.active):hover {
+    background: #c1bebe;
+}
+
+.anim-photo-card .card.active h3 {
+    color: #FFFFFF;
+  }
