@@ -100,3 +100,24 @@
         padding: 0 55px;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        padding: 0 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-head {
+        padding: 0;
+    }
+
+    .checked-list {
+        margin: 0 0 35px;
+    }
+
+    .banner .socials,
+    .banner .more {
+        display: none;
+    }
+}
