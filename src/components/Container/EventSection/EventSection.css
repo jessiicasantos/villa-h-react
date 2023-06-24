@@ -121,3 +121,17 @@
 .card-event h6 {
     margin: 0 0 10px;
 }
+
+@media screen and (max-width: 1366px) {
+    .menu-event {
+        max-width: 452px;
+    }
+
+    .menu-event li {
+        padding: 0 70px 0;
+    }
+
+    .card-event {
+        max-width: 539px;
+    }
+}
