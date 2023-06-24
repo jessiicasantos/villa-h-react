@@ -84,6 +84,17 @@ const InfoTestimonial = () => {
         grabCursor={true}
         watchSlidesProgress
         navigation
+        breakpoints={{
+          1366: {
+            slidesPerView: 3,
+          },
+          1025: {
+            slidesPerView: 2,
+          },
+          319: {
+            slidesPerView: 1,
+          },
+        }}
         className="swiper-testimonial"
       >
         {dataTestimonial.map((data, i) => (
