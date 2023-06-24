@@ -3,46 +3,6 @@
     max-width: 1338px;
 }
 
-.photos-section {
-    padding: 0 0 172px;
-}
-
-.photo-section {
-    display: flex;
-    align-items: center;
-}
-
-.photo-section .section {
-    margin: auto;
-    padding: 25px;
-    max-width: 415px;
-}
-
-.photo-section .section > h2 {
-    margin: 0 0 11px;
-    max-width: 283px;
-}
-
-.photo-section p {
-    margin: 0 0 23px;
-    line-height: 25px;
-}
-
-.photo-section > div:first-child, 
-.photo-section > section {
-    width: 50%;
-}
-
-.photo-section > div:first-child > img {
-    max-width: 555px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.photo-right {
-    flex-direction: row-reverse;
-}
-
 .cards-horizontal {
     display: flex;
     padding: 78px 15px 114px;

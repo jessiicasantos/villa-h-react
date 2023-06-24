@@ -10,6 +10,7 @@ import Jantar from '../img/jantar-na-praia.png';
 import Photo from './Photo/Photo';
 import Section from '../../Section/Section';
 import Modal from '../../Modal/Modal';
+import './PhotoSection.css';
 
 const columns = [
   {
