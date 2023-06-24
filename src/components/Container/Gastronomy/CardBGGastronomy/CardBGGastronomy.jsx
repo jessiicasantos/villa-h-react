@@ -19,12 +19,12 @@ const CardBGastronomy = () => (
           refeição ou para o seu evento, a experiência promete ser inesquecível.
         </p>
       }
-      btn={
-        <div className="btns">
-          <button className="btn-gold">Ver Menu</button>
-          <button className="btn-brd-gold">Carta de Vinho</button>
-        </div>
-      }
+      // btn={
+      //   <div className="btns">
+      //     <button className="btn-gold">Ver Menu</button>
+      //     <button className="btn-brd-gold">Carta de Vinho</button>
+      //   </div>
+      // }
     />
   </div>
 );
