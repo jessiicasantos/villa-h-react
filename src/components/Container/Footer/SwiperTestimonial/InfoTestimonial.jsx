@@ -85,7 +85,7 @@ const InfoTestimonial = () => {
         watchSlidesProgress
         navigation
         breakpoints={{
-          1366: {
+          1367: {
             slidesPerView: 3,
           },
           1025: {
