@@ -21,8 +21,8 @@ const menus = [
   },
 ];
 
-const NavMenu = ({ isOpen }) => (
-  <ul className={`nav-links ${isOpen}`}>
+const NavMenu = () => (
+  <ul className="nav-links">
     {menus.map((m, index) => (
       <li className="nav-link" key={`${m}`[index]}>
         <a href={m.href}>{m.text}</a>

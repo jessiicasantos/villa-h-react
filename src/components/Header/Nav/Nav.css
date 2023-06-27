@@ -49,6 +49,10 @@ nav .mb-wrapper {
     color: #AA8B4E;
 }
 
+.socials-mb {
+    display: none;
+}
+
 #btn-nav-mb {
     display: none;
     background: transparent;
@@ -116,37 +120,46 @@ nav .mb-wrapper {
 
 @media screen and (max-width: 1024px) {
     .top-nav {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
         padding: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: #1f2338;
+        z-index: 999;
     }
 
-    .nav-links, .top-nav .btn-brd-gold {
-        display: none;
+    .top-nav.active {
+        position: fixed;
+    }
+
+    .main-nav {
+        width: 100%;
+        display: flex;
     }
 
     #btn-nav-mb {
         display: block;
     }
 
-    .nav-links.active,
-    .top-nav .btn-brd-gold.active {
-        display: flex;
-        align-items: center;
-    }
-
     nav .mb-wrapper {
+        display: none;
         flex-direction: column;
         justify-content: center;
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: #1f2338;
-        z-index: 9;
+    }
+
+    nav .mb-wrapper.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .nav-links {
         flex-direction: column;
+        align-items: center;
         z-index: 999;
     }
 
