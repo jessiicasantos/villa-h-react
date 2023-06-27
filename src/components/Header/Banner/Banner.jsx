@@ -5,7 +5,7 @@ import './Banner.css';
 
 const Banner = () => (
   <div className="banner" id="momentos">
-    <BannerSocial />
+    <BannerSocial line={<div className="line-vert"></div>} />
     <BannerHeadline />
     <BannerGallery />
   </div>

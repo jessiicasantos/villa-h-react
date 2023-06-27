@@ -53,11 +53,10 @@ nav .mb-wrapper {
     display: none;
     background: transparent;
     border: 0;
-    display: block;
     margin: 0 0 0 auto;
     cursor: pointer;
-    padding: 30px 39px;
-    width: 105.01px;
+    padding: 30px 15px;
+    width: 60px;
     height: 88px;
     transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
@@ -97,7 +96,7 @@ nav .mb-wrapper {
 
 @media screen and (max-width: 1366px) {
     .nav-logo a {
-        padding: 40px 15px 32px 15px;
+        padding: 40px 15px 32px;
     }
 
     .nav-logo svg {
@@ -169,6 +168,20 @@ nav .mb-wrapper {
         font-size: 18px;
         letter-spacing: 1px;
         line-height: 120%;
+    }
+
+    .top-nav .btn-brd-gold {
+        margin: 20px 0 0;
+    }
+
+    .socials-mb {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+    }
+    
+    .socials-mb a {
+        margin: 0 15px;
     }
 }
 

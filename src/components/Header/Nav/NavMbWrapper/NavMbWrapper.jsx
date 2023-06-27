@@ -1,5 +1,6 @@
 import NavMenu from '../NavMenu/NavMenu';
 import Link from '../../../Link/Link';
+import BannerSocial from '../../Banner/BannerSocial/BannerSocial';
 
 const NavMbWrapper = ({ isOpen }) => (
   <div className="mb-wrapper">
@@ -9,6 +10,7 @@ const NavMbWrapper = ({ isOpen }) => (
       txt={'SOLICITAR UM ORÇAMENTO'}
       isOpen={`btn-brd-gold ${isOpen}`}
     />
+    <BannerSocial className="socials-mb" />
   </div>
 );
 

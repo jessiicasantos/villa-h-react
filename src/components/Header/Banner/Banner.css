@@ -4,7 +4,7 @@
     align-items: flex-end;
 }
 
-.socials {
+.banner .socials {
     margin: auto 0 0;
     max-height: 551px;
     display: flex;
@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-.socials a {
+.banner .socials a {
     margin: 0 0 9px;
 }
 

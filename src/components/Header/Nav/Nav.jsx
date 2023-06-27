@@ -31,9 +31,7 @@ const Nav = () => {
           />
         </>
       )}
-      {window.innerWidth <= 1024 ? (
-        <Burguer id="btn-nav-mb" isOpen={active} handleIsOpen={handleIsOpen} />
-      ) : null}
+      <Burguer id="btn-nav-mb" isOpen={active} handleIsOpen={handleIsOpen} />
     </nav>
   );
 };

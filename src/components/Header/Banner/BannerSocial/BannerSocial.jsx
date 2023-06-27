@@ -12,14 +12,14 @@ const socials = [
   },
 ];
 
-const BannerSocial = () => (
-  <div className="socials">
+const BannerSocial = ({ className, line }) => (
+  <div className={`socials${className ? ` ${className}` : ''}`}>
     {socials.map((s, index) => (
       <a href={s.href} key={`${s}`[index]} target="_blank" rel="noreferrer">
         {s.social}
       </a>
     ))}
-    <div className="line-vert"></div>
+    <>{line}</>
   </div>
 );
 
