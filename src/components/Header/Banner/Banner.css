@@ -112,8 +112,16 @@
         padding: 0;
     }
 
+    .section-banner h1 {
+        margin: 0;
+    }
+
     .checked-list {
         margin: 0 0 35px;
+    }
+    
+    .swiper-gallery {
+        max-width: 710px;
     }
 
     .banner .socials,
