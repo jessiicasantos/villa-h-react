@@ -121,6 +121,7 @@
     }
     
     .swiper-gallery {
+        margin: 0 0 -99px;
         max-width: 710px;
     }
 
