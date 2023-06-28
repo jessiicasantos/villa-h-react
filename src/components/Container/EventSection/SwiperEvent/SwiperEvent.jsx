@@ -22,6 +22,14 @@ const SwiperEvent = ({ gallery }) => {
         slidesPerView={2.4}
         grabCursor={true}
         className="swiper-event"
+        breakpoints={{
+          1025: {
+            slidesPerView: 2.4,
+          },
+          // 320: {
+          //   slidesPerView: 'auto',
+          // },
+        }}
       >
         {gallery?.map((g, index) => {
           return (

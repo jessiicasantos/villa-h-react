@@ -191,4 +191,8 @@
     .swiper-event {
         max-width: initial;
     }
+
+    .swiper-event .swiper-slide {
+        justify-content: flex-start;
+    }
 }

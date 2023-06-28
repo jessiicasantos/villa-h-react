@@ -9,6 +9,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background:#E9E9E9; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #636979;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #45526F; 
+}
+
 h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
   text-align: left;

@@ -10,8 +10,8 @@ import { ReactComponent as Handshake } from '../../../../assets/img/handshake-ic
 import { ReactComponent as PartyBuild } from '../../../../assets/img/party-build-icon.svg';
 import { ReactComponent as Foot } from '../../../../assets/img/foot-icon.svg';
 import { ReactComponent as Ring } from '../../../../assets/img/ring-icon.svg';
-import Card from '../../../Card/Card';
-import SwiperEvent from '../SwiperEvent/SwiperEvent';
+import Event from '../Event/Event';
+
 import { useState } from 'react';
 import SlidePre1 from '../img/elop-wedding-happy-couple.png';
 import SlidePre2 from '../img/elop-wedding-photography.png';
@@ -25,14 +25,7 @@ const links = [
     title: 'Pré Wedding',
     className: 'active',
     tag: <h5 className="tag"></h5>,
-    text: (
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
-        nostrum. Officiis eius cupiditate repudiandae distinctio officia
-        tempore, perferendis voluptatem magnam, blanditiis magni laboriosam.
-        Explicabo incidunt delectus quae nemo, vitae atque!
-      </p>
-    ),
+    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, nostrum. Officiis eius cupiditate repudiandae distinctio officia tempore, perferendis voluptatem magnam, blanditiis magni laboriosam. Explicabo incidunt delectus quae nemo, vitae atque!',
     gallery: [
       {
         url: SlidePre1,
@@ -56,16 +49,7 @@ const links = [
     svg: <Bride />,
     id: 'elopWed',
     title: 'Elopement Wedding',
-    text: (
-      <p>
-        É realizada uma cerimônia, sendo indicado para os casais que desejam
-        viver intensamente o romantismo do momento. O ideal é que seja realizado
-        apenas com os noivos, podendo contar com um número máximo de 10 pessoas,
-        incluindo celebrante e fotógrafo. Os locais escolhidos para essa
-        celebração normalmente conta com um visual de maravilhoso e a Villa H se
-        encaixa perfeitamente, contribuindo com fotos incríveis deste dia.
-      </p>
-    ),
+    text: 'É realizada uma cerimônia, sendo indicado para os casais que desejam viver intensamente o romantismo do momento. O ideal é que seja realizado apenas com os noivos, podendo contar com um número máximo de 10 pessoas, incluindo celebrante e fotógrafo. Os locais escolhidos para essa celebração normalmente conta com um visual de maravilhoso e a Villa H se encaixa perfeitamente, contribuindo com fotos incríveis deste dia.',
     gallery: [
       {
         url: SlidePre4,
@@ -114,14 +98,7 @@ const links = [
     id: 'dayUse',
     title: 'Day Use',
     tag: <h5 className="tag"></h5>,
-    text: (
-      <p>
-        Day use é uma modalidade de hospedagem sem pernoite, podendo-se
-        aproveitar a estrutura do local. Além da nossa vista maravilhosa, você
-        pode aproveitar um dia de sol na piscina da Villa H. Assim, você pode
-        curtir ao máximo tudo o que o nosso espaço tem a oferecer
-      </p>
-    ),
+    text: 'Day use é uma modalidade de hospedagem sem pernoite, podendo-se aproveitar a estrutura do local. Além da nossa vista maravilhosa, você  pode aproveitar um dia de sol na piscina da Villa H. Assim, você pode curtir ao máximo tudo o que o nosso espaço tem a oferecer',
   },
   {
     svg: <BreakFast />,
@@ -179,34 +156,7 @@ const MenuEvent = ({ subtitle }) => {
           </li>
         ))}
       </ul>
-      <Event cardIsActive={isActive} />
-    </div>
-  );
-};
-
-const Event = ({ cardIsActive }) => {
-  return (
-    <div className="event">
-      {links.map((c, i) => (
-        <Card
-          className={`card-event theme-gray ${
-            cardIsActive === c.id ? 'active' : ''
-          }`}
-          key={`c-${i}`}
-          svg={c.svg}
-          tag={c.tag}
-          title={<h3>{c.title}</h3>}
-          text={c.text}
-          more={<button className="more">LER MAIS</button>}
-          btn={
-            <a href="#orcamento" className="btn-dark-blue">
-              SOLICITAR UM ORÇAMENTO
-            </a>
-          }
-          // slides={c.gallery ? <SwiperEvent gallery={c.gallery} /> : null}
-          slides={c.gallery ? <SwiperEvent gallery={c.gallery} /> : null}
-        />
-      ))}
+      <Event links={links} cardIsActive={isActive} />
     </div>
   );
 };

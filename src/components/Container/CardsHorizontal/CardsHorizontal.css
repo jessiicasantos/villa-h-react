@@ -51,12 +51,12 @@
     }
 
 
-    .card-wrapper {
+    .cards-horizontal .card-wrapper {
         display: flex;
         align-items: center;
     }
 
-    .card-wrapper::after {
+    .cards-horizontal .card-wrapper::after {
         content: '';
         position: absolute;
         right: 30px;
@@ -71,7 +71,7 @@
         margin: auto 0 auto auto;
     }
 
-    .card.open .card-wrapper::after {
+    .cards-horizontal .card.open .card-wrapper::after {
         transform: rotate(225deg);
     }
 

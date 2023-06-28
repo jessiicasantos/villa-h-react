@@ -82,6 +82,10 @@
     vertical-align: middle;
 }
 
+.event {
+    padding: 0 28px;
+}
+
 .card-event {
     display: none;
     position: absolute;
@@ -132,6 +136,29 @@
     margin: 0 0 10px;
 }
 
+.card-event a.btn-dark-blue {
+    margin: 35px 0 0;
+    padding: 17px 26px 16px 27px;
+    display: flex;
+    width: fit-content;
+}
+
+.card-event .more {
+    display: none;
+    max-width: 237px;
+    width: 100%;
+    justify-content: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border: 1px solid #1F2338;
+    border-radius: 2px;
+    padding: 17px 26px 16px 27px;
+    background-color: transparent;
+    color: #1F2338;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 @media screen and (max-width: 1366px) {
     .menu-event {
         max-width: 452px;
@@ -147,7 +174,12 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .event-section {
+        padding: 90px 0 45px;
+    }
+
     .event-section section {
+        margin: 0 auto;
         padding: 0 15px;
     }
 
@@ -165,6 +197,11 @@
         padding: 15px 0 33px 28px;
         overflow-x: scroll;
         overflow-y: hidden;
+    }
+
+    .menu-event > ul::-webkit-scrollbar {
+        width: 0;
+        height: 0;
     }
 
     .menu-event > ul,
@@ -190,5 +227,24 @@
         top: initial;
         left: initial;
         max-width: initial;
+    }
+
+    .card-event .more {
+        display: flex;
+
+    }
+
+    .card-event > p.read-more {
+        mask-image: initial;
+        -webkit-line-clamp: initial;
+    }
+
+    .card-event p {
+        mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(233,233,233,1)), to(rgba(233,233,233,40%)));
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;        
     }
 }
