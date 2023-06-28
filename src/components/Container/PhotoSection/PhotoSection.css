@@ -37,3 +37,21 @@
 .photo-right {
     flex-direction: row-reverse;
 }
+
+@media screen and (max-width: 1024px) {
+    .photos-section {
+        padding: 0 0 36px;
+    }
+    
+    .photo-section .section {
+        padding: 30px 33px 33px;
+    }
+    
+    .photo-section .btn-dark-blue {
+        width: -webkit-fill-available;
+    }
+
+    /* .photo-section > div:first-child > img {
+        display: none;
+    } */
+}

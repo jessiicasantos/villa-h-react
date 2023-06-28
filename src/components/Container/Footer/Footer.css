@@ -175,6 +175,7 @@ form textarea {
     height: fit-content;
     margin: 4% 0 0 15px;
     max-width: 616px;
+    width: 100%;
 }
 
 .columns {
@@ -328,5 +329,13 @@ form textarea {
 @media screen and (max-width: 1366px) {
     footer h3 {
         margin: 0 0 18px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .orcamento-info,
+    .form-contact {
+        margin: 0 auto;
     }
 }

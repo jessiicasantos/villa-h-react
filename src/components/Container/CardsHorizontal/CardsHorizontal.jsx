@@ -4,6 +4,7 @@ import { ReactComponent as PartyIcon } from '../../../assets/img/party-icon.svg'
 import { ReactComponent as CookIcon } from '../../../assets/img/cook-icon.svg';
 import { ReactComponent as MusicIcon } from '../../../assets/img/music-icon.svg';
 import './CardsHorizontal.css';
+import { useState } from 'react';
 
 const cards = [
   {
@@ -30,18 +31,28 @@ const cards = [
   },
 ];
 
-const CardsHorizontal = () => (
-  <div className="cards-horizontal">
-    {cards.map((c, i) => (
-      <Card
-        key={`${c}`[i]}
-        svg={c.svg}
-        tag={c.tag}
-        title={<h3>{c.title}</h3>}
-        text={<p>{c.text}</p>}
-      />
-    ))}
-  </div>
-);
+const CardsHorizontal = () => {
+  const [open, setIsOpen] = useState(false);
+
+  const handleOpen = (title) => {
+    setIsOpen(title, !open);
+  };
+
+  return (
+    <div className="cards-horizontal">
+      {cards.map((c, i) => (
+        <Card
+          key={`c-${i}`}
+          className={open === c.title ? 'open' : ''}
+          svg={c.svg}
+          tag={c.tag}
+          title={<h3>{c.title}</h3>}
+          text={<p>{c.text}</p>}
+          onClick={() => handleOpen(c.title)}
+        />
+      ))}
+    </div>
+  );
+};
 
 export default CardsHorizontal;

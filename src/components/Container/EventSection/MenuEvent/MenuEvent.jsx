@@ -155,7 +155,7 @@ const links = [
   },
 ];
 
-const MenuEvent = () => {
+const MenuEvent = ({ subtitle }) => {
   const [isActive, setIsActive] = useState(links[0].id);
 
   const handleIsActive = (id) => {
@@ -164,6 +164,7 @@ const MenuEvent = () => {
 
   return (
     <div className="menu-event theme-dark-blue">
+      <>{subtitle}</>
       <ul>
         {links.map((l, i) => (
           <li key={`menu-${i}`} className={isActive === l.id ? 'active' : ''}>
@@ -177,8 +178,8 @@ const MenuEvent = () => {
             </button>
           </li>
         ))}
-        <Event cardIsActive={isActive} />
       </ul>
+      <Event cardIsActive={isActive} />
     </div>
   );
 };
@@ -196,6 +197,7 @@ const Event = ({ cardIsActive }) => {
           tag={c.tag}
           title={<h3>{c.title}</h3>}
           text={c.text}
+          more={<button className="more">LER MAIS</button>}
           btn={
             <a href="#orcamento" className="btn-dark-blue">
               SOLICITAR UM ORÇAMENTO

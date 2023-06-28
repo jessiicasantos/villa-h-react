@@ -11,6 +11,7 @@ import Photo from './Photo/Photo';
 import Section from '../../Section/Section';
 import Modal from '../../Modal/Modal';
 import './PhotoSection.css';
+// import SwiperGalleryMB from './SwiperGalleryMB/SwiperGalleryMB';
 
 const columns = [
   {
@@ -109,40 +110,42 @@ function PhotoSection() {
   return (
     <div className="photos-section">
       {columns.map((c, index) => (
-        <div
-          key={`photo-section-${index}`}
-          className={`photo-section photo-${!(index % 2) ? 'left' : 'right'}`}
-        >
-          <Photo src={c.photo} alt={c.alt} />
-          <Section
-            className="section section-dark"
-            title={<h2>{c.title}</h2>}
-            text={<p>{c.text}</p>}
-            btn={
-              c.gallery ? (
-                <button
-                  className="btn-dark-blue"
-                  onClick={() => openModal(c.id)}
-                >
-                  VER GALERIA DO AMBIENTE
+        <div key={`photo-section-${index}`}>
+          {/* <SwiperGalleryMB gallery={c.gallery} /> */}
+          <div
+            className={`photo-section photo-${!(index % 2) ? 'left' : 'right'}`}
+          >
+            <Photo src={c.photo} alt={c.alt} />
+            <Section
+              className="section section-dark"
+              title={<h2>{c.title}</h2>}
+              text={<p>{c.text}</p>}
+              btn={
+                c.gallery ? (
+                  <button
+                    className="btn-dark-blue"
+                    onClick={() => openModal(c.id)}
+                  >
+                    VER GALERIA DO AMBIENTE
+                  </button>
+                ) : null
+              }
+            />
+            <Modal
+              id={`modal-${c.id}`}
+              className={`modal-photoSection ${
+                modalIsOpen === c.id ? 'open' : ''
+              }`}
+              title={<h2>{c.title}</h2>}
+              photo={<img src={c.photo} alt={c.alt} />}
+              closeBtn={
+                <button className="btn-close" onClick={closeModal}>
+                  x
                 </button>
-              ) : null
-            }
-          />
-          <Modal
-            id={`modal-${c.id}`}
-            className={`modal-photoSection ${
-              modalIsOpen === c.id ? 'open' : ''
-            }`}
-            title={<h2>{c.title}</h2>}
-            photo={<img src={c.photo} alt={c.alt} />}
-            closeBtn={
-              <button className="btn-close" onClick={closeModal}>
-                x
-              </button>
-            }
-            gallery={c.gallery}
-          />
+              }
+              gallery={c.gallery}
+            />
+          </div>
         </div>
       ))}
     </div>

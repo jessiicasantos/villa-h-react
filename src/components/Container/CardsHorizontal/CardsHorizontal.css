@@ -35,3 +35,66 @@
 .cards-horizontal .card:first-child {
     max-width: 242px;
 }
+
+@media screen and (max-width: 1024px) {
+    .cards-horizontal {
+        padding: 7px 0 5px;
+    }
+
+    .cards-horizontal .card:first-child {
+        max-width: -webkit-fill-available;
+    }
+
+    .cards-horizontal .card,
+    .cards-horizontal .card:not(:last-child) {
+        padding: 22px 40px 20px 38px;
+    }
+
+
+    .card-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .card-wrapper::after {
+        content: '';
+        position: absolute;
+        right: 30px;
+        border: solid #ffffff;
+        border-width: 0 3px 3px 0;
+        border-radius: 1px;
+        transform: rotate(45deg);
+        transition: all 0.2s;
+        height: 11px;
+        width: 11px;
+        opacity: 0.6;
+        margin: auto 0 auto auto;
+    }
+
+    .card.open .card-wrapper::after {
+        transform: rotate(225deg);
+    }
+
+    .cards-horizontal .card-wrapper svg {
+        padding: 0 15px 0 0;
+        max-width: 50px;
+    }
+
+    .cards-horizontal .card-wrapper .tag {
+        position: absolute;
+        right: 100px;
+    }
+
+    .cards-horizontal .card-wrapper .tag::after {
+        position: relative;
+        top: 50%;
+    }
+
+    .cards-horizontal .card > p {
+        display: none;
+    }
+
+    .cards-horizontal .card.open > p {
+        display: block;
+    }
+}

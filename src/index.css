@@ -139,6 +139,7 @@ h2 {
 @media screen and (max-width: 1024px) {
   .benefits,
   .photo-section,
+  .photo-section.photo-right,
   .cards-horizontal,
   .event-section,
   .anim-photo-card,

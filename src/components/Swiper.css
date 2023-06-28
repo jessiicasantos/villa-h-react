@@ -187,4 +187,8 @@
     .swiper-testimonial .swiper-button-next {
         display: block;
     }
+
+    .swiper-event {
+        max-width: initial;
+    }
 }

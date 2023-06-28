@@ -4,17 +4,21 @@ const Card = ({
   tag,
   title,
   text,
+  more,
   btn,
   line,
   subtitle,
   slides,
   onClick,
 }) => (
-  <div className={`card ${className}`} onClick={onClick}>
-    <>{svg}</>
-    <>{tag}</>
-    <>{title}</>
+  <div className={`card ${className ? className : ''}`} onClick={onClick}>
+    <div className="card-wrapper">
+      <>{svg}</>
+      <>{tag}</>
+      <>{title}</>
+    </div>
     <>{text}</>
+    <>{more}</>
     <>{btn}</>
     <>{line}</>
     <>{subtitle}</>

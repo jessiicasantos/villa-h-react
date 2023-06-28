@@ -21,7 +21,7 @@ const EventSection = ({ data }) => (
         </p>
       }
     />
-    <MenuEvent data={data} />
+    <MenuEvent subtitle={<h6>ESCOLHA UMA FESTA</h6>} data={data} />
   </div>
 );
 
