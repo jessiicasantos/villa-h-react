@@ -215,7 +215,7 @@
 
     .menu-event .btn-event  {
         align-items: center;
-        padding: 13px 23px 14px 6px;
+        padding: 13px 23px 14px;
     }
 
     .card-event a.btn-dark-blue {
@@ -226,7 +226,8 @@
         position: relative;
         top: initial;
         left: initial;
-        max-width: initial;
+        max-width: 600px;
+        margin: 0 auto;
     }
 
     .card-event .more {
@@ -246,5 +247,9 @@
         text-overflow: ellipsis;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;        
+    }
+
+    .event {
+        padding: 0 28px 58px;
     }
 }
