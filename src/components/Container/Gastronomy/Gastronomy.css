@@ -56,4 +56,16 @@
         margin: 0 auto;
         top: -23px;
     }
+
+    .bg-gastronomy img {
+        height: 523px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 80%;
+    }
+
+    .card-bg-gastronomy {
+        margin: 0 auto 0;
+        padding: 83px 15px 0;
+    }
 }
