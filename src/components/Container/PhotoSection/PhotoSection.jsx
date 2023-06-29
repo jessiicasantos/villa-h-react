@@ -11,7 +11,50 @@ import Photo from './Photo/Photo';
 import Section from '../../Section/Section';
 import Modal from '../../Modal/Modal';
 import './PhotoSection.css';
-// import SwiperGalleryMB from './SwiperGalleryMB/SwiperGalleryMB';
+import SwiperGalleryMB from './SwiperGalleryMB/SwiperGalleryMB';
+
+const galleryMB = [
+  {
+    url: SalaoPrincipal,
+    alt: 'Salão Principal',
+  },
+  {
+    url: Loft,
+    alt: 'Loft',
+  },
+  {
+    url: Deck,
+    alt: 'Deck',
+  },
+  {
+    url: Aurora,
+    alt: 'Aurora Boreal',
+  },
+  {
+    url: Bird,
+    alt: 'Pássaro voando entre as árvores',
+  },
+  {
+    url: Gastronomia,
+    alt: 'Gastronomia',
+  },
+  {
+    url: Loft,
+    alt: 'loft',
+  },
+  {
+    url: SalaoPrincipal,
+    alt: 'Salão Principal',
+  },
+  {
+    url: Restaurant,
+    alt: 'Restaurante com mesa branca e buquê',
+  },
+  {
+    url: Jantar,
+    alt: 'Janta à beira da praia',
+  },
+];
 
 const columns = [
   {
@@ -109,11 +152,11 @@ function PhotoSection() {
 
   return (
     <div className="photos-section">
+      <SwiperGalleryMB galleryMB={galleryMB} />
       {columns.map((c, index) => (
         <div key={`photo-section-${index}`}>
-          {/* <SwiperGalleryMB gallery={c.gallery} /> */}
           <div
-            className={`photo-section photo-${!(index % 2) ? 'left' : 'right'}`}
+            className={`photo-section photo-${index % 2 ? 'right' : 'left'}`}
           >
             <Photo src={c.photo} alt={c.alt} />
             <Section

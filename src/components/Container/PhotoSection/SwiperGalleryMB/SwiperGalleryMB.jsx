@@ -1,26 +1,20 @@
-import { Keyboard, Mousewheel, Navigation, Pagination, A11y } from 'swiper';
+import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-const SwiperGalleryMB = ({ gallery }) => (
+const SwiperGalleryMB = ({ galleryMB }) => (
   <Swiper
-    modules={[Keyboard, Mousewheel, Navigation, Pagination, A11y]}
-    spaceBetween={20}
-    slidesPerView={3}
-    keyboard={{
-      enabled: true,
-    }}
-    mousewheel={true}
-    grabCursor={true}
+    className="swiper-gallery-mb"
+    modules={Navigation}
+    slidesPerView={1}
     navigation
-    pagination={{ clickable: true }}
   >
-    {gallery?.map((mg, ind) => (
-      <SwiperSlide key={`${mg.id}${ind}`}>
-        <img src={mg.url} alt={mg.alt} />
+    {galleryMB?.map((g, ind) => (
+      <SwiperSlide key={`g-${ind}`}>
+        <img src={g.url} alt={g.alt} />
       </SwiperSlide>
     ))}
   </Swiper>
