@@ -6,6 +6,7 @@ import { ReactComponent as Fish } from '../../../assets/img/fish-icon.svg';
 import BoxContact from './BoxContact/BoxContact';
 import { ReactComponent as DoubleCircle } from './img/double-circle.svg';
 import LogoKindle from './img/logo-kindle.png';
+import InputMask from 'react-input-mask';
 
 const dataSelect = [
   {
@@ -57,21 +58,34 @@ const Footer = () => (
           <div className="columns">
             <label htmlFor="name">
               Nome Completo*
-              <input type="text" id="name" required />
+              <InputMask type="text" id="name" required />
             </label>
             <label htmlFor="Email">
               Email*
-              <input type="text" id="email" required />
+              <InputMask type="text" id="email" required />
             </label>
           </div>
           <div className="columns">
             <label htmlFor="name">
               Celular*
-              <input type="text" id="cel" required />
+              <InputMask
+                type="text"
+                id="cel"
+                required
+                mask="(99) 99999-9999"
+                maskPlaceholder="(__) _____-____"
+                alwaysShowMask
+              />
             </label>
-            <label htmlFor="Email">
+            <label htmlFor="tel">
               Telefone
-              <input type="text" id="tel" />
+              <InputMask
+                type="text"
+                id="tel"
+                mask="(99) 99999-9999"
+                maskPlaceholder={'(__) _____-____'}
+                alwaysShowMask
+              />
             </label>
           </div>
           <div className="columns multi-columns">
@@ -89,13 +103,18 @@ const Footer = () => (
               <div>
                 <label htmlFor="Email">
                   Data do evento
-                  <input type="text" id="tel" />
+                  <InputMask
+                    type="text"
+                    id="email"
+                    mask="99/99/9999"
+                    alwaysShowMask
+                  />
                 </label>
               </div>
               <div>
-                <label htmlFor="Email">
+                <label htmlFor="guests">
                   Convidados
-                  <input type="text" id="tel" />
+                  <InputMask type="text" id="guests" mask="99999" />
                 </label>
               </div>
             </div>
@@ -105,13 +124,13 @@ const Footer = () => (
             <textarea name="msg-txt" id="msg-txt" cols="30" rows="3"></textarea>
           </label>
           <div className="check">
-            <input type="checkbox" id="check-email" name="check-email" />
+            <InputMask type="checkbox" id="check-email" name="check-email" />
             <label htmlFor="check-email">
               Desejo receber o material de fornecedores parceiros por email.
             </label>
           </div>
           <div className="check">
-            <input type="checkbox" id="furniture" name="furniture" />
+            <InputMask type="checkbox" id="furniture" name="furniture" />
             <label htmlFor="furniture">
               Tenho interesse em contar com a mobília da Villa H para o meu
               evento.
