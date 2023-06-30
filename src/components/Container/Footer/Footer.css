@@ -175,18 +175,21 @@ form textarea {
     height: fit-content;
     margin: 4% 0 0 15px;
     max-width: 616px;
-    width: 100%;
 }
 
 .columns {
     margin: 0 0 12px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
 }
 
 .columns, .form-contact label {
     display: flex;
+}
+
+form .columns, form .mb-columns {
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .form-contact label {
@@ -224,6 +227,19 @@ form textarea {
     margin: 1px 0 0;
 }
 
+form .columns > div:first-child {
+    width: 60%;
+}
+
+form .columns > div, form .mb-columns > div {
+    margin: 0 7px 0 0;
+    width: auto;
+}
+
+form .columns > div:last-child, form .mb-columns > div:last-child {
+    margin: auto;
+}
+
 .check {
     margin: 0 0 14px;
     display: flex;
@@ -242,6 +258,10 @@ form textarea {
     display: none;
 }
 
+.check label:hover::before {
+    background: #9f9f9f;
+}
+
 .check label::before {
     content: '';
     appearance: none;
@@ -256,6 +276,7 @@ form textarea {
     vertical-align: middle;
     cursor: pointer;
     margin-right: 9px;
+    transition: .3s ease-in;
 }
 
 .check input:checked + label::after {
@@ -301,6 +322,7 @@ form textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .copyright hr {
@@ -309,6 +331,7 @@ form textarea {
 
 
 .copyright h6 {
+    margin: 0 10px 0 0;
     font-family: 'Heebo', sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -350,5 +373,88 @@ form textarea {
 
     .double-circle {
         bottom: 53px;
+    }
+
+    form .check {
+        margin: 0 0 25px;
+    }
+
+    .form-contact .btn-dark-blue {
+        margin: 0 0 20px;
+        padding: 10px 63px 11px 66px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer hr {
+        margin: 8px 0 38px;
+    }
+
+    footer h3 {
+        font-size: 26px;
+        line-height: 3vh;
+    }
+
+    .orcamento section p {
+        margin: 0 0 24px;
+        font-size: 15px;
+        line-height: 3.5vh;
+    }
+
+    .box-contact ul > li a {
+        font-size: 15px;
+    }
+
+    .box-contact ul > li:first-of-type > a {
+        font-size: 18px;
+    }
+
+    footer {
+        padding: 38px 0 34px;
+    }
+
+    .form-contact {
+        padding: 20px 12px;
+        max-width: 100%;
+        width: auto;
+    }
+
+    form .multi-columns {
+        flex-wrap: wrap;
+    }
+
+    form .columns > div:first-child {
+        width: 100%;
+    }
+
+    form .mb-columns > div {
+        width: 50%;
+    }
+
+    form .columns > .mb-columns {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    form .columns, form .columns > div, form .mb-columns > div {
+        margin: 0;
+        flex-wrap: wrap;
+    }
+
+    .form-contact label, .form-contact label:not(:last-of-type) {
+        margin: 0 0 14px;
+    }
+
+    form .mb-columns > div {
+        width: 100%;
+    }
+
+    .form-contact button + p {
+        text-align: center;
+    }
+
+    .copyright {
+        justify-content: center;
     }
 }

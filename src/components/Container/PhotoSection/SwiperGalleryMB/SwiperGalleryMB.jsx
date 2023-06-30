@@ -1,14 +1,13 @@
-import { Navigation } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import '../../../../styles.css';
+import { Navigation } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const SwiperGalleryMB = ({ galleryMB }) => (
   <Swiper
     className="swiper-gallery-mb"
-    modules={Navigation}
+    modules={[Navigation]}
     slidesPerView={1}
     navigation
   >

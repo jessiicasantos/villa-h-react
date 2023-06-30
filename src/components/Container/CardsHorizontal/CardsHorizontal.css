@@ -45,6 +45,19 @@
         max-width: -webkit-fill-available;
     }
 
+    .cards-horizontal .card:not(:last-child) {
+        position: relative;
+    }
+
+    .cards-horizontal .card:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        border: 1px solid #FFFFFF1a;
+        max-width: 90%;
+        width: 100%;
+    }
+
     .cards-horizontal .card,
     .cards-horizontal .card:not(:last-child) {
         padding: 22px 40px 20px 38px;
@@ -59,7 +72,7 @@
     .cards-horizontal .card-wrapper::after {
         content: '';
         position: absolute;
-        right: 30px;
+        right: 40px;
         border: solid #ffffff;
         border-width: 0 3px 3px 0;
         border-radius: 1px;
@@ -96,5 +109,28 @@
 
     .cards-horizontal .card.open > p {
         display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards-horizontal h3 {
+        margin: 5px 0 0;
+        font-size: 20px;
+    }
+
+    .cards-horizontal .card-wrapper::after {
+        height: 6px;
+        width: 6px;
+    }
+
+    .cards-horizontal .card p {
+        font-size: 15px;
+        line-height: 3vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cards-horizontal .card-wrapper .tag {
+        display: none;
     }
 }

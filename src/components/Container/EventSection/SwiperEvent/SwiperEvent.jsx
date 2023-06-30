@@ -26,9 +26,12 @@ const SwiperEvent = ({ gallery }) => {
           1025: {
             slidesPerView: 2.4,
           },
-          // 320: {
-          //   slidesPerView: 'auto',
-          // },
+          500: {
+            slidesPerView: 2.5,
+          },
+          319: {
+            slidesPerView: 1.3,
+          },
         }}
       >
         {gallery?.map((g, index) => {

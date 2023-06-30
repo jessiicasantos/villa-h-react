@@ -11,3 +11,10 @@ section p {
   .section-dark p {
     color: #5F5F5F;
   }
+
+  @media screen and (max-width: 768px) {
+    section p {
+      font-size: 15px;
+      line-height: 3vh;
+    }
+  }

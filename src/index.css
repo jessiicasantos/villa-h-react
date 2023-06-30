@@ -171,3 +171,15 @@ h2 {
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 26px;
+    line-height: 4.5vh;
+  }
+
+  .tag::after {
+    padding: 0px 11px;
+    font-size: 11px;
+}
+}

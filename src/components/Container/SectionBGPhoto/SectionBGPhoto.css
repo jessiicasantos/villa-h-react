@@ -33,7 +33,8 @@
 
 .fish-rotate-wrapper {
     position: absolute;
-    right: 0;
+    top: -20px;
+    right: -10px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -46,8 +47,17 @@
     justify-content: center;
 }
 
-.tag-circle, .fish-logo {
+.tag-circle, 
+.fish-logo {
     position: absolute;
+}
+
+.tag-circle{
+    right: 41px;
+}
+
+.fish-logo {
+    right: 137px;
 }
 
 .anim-photo-card {
@@ -129,6 +139,7 @@
     }
 
     .tag-circle {
+        right: 0;
         width: 238px;
     }
 
@@ -166,7 +177,6 @@
 
     .anim-photo-card .card,
     .anim-photo-card .card.active {
-        /* margin: 0; */
         padding: 34px 22px 22px 31px;
         min-width: 292px;
     }
@@ -182,5 +192,30 @@
 
     .anim-photo-card .card h3 {
         margin: 0 0 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-bg section {
+        max-width: 283px;
+    }
+
+    .section-bg h2 {
+        margin: 0 0 14px;
+        max-width: 250px;
+    }
+
+    .anim-photo-card .card h3 {
+        font-size: 18px;
+    }
+
+    .anim-photo-card .card p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .anim-photo-card .card, .anim-photo-card .card.active {
+        padding: 34px 10px 22px 18px;
     }
 }

@@ -74,38 +74,45 @@ const Footer = () => (
               <input type="text" id="tel" />
             </label>
           </div>
-          <div className="columns">
-            <label htmlFor="type-party">
-              Tipo da festa
-              {/* <input type="text" id="type-party"  /> */}
-              <select name="sel-party" id="sel-party">
-                {dataSelect.map((d, i) => (
-                  <option key={`${d}`[i]}>{d.txt}</option>
-                ))}
-              </select>
-            </label>
-            <label htmlFor="Email">
-              Data do evento
-              <input type="text" id="tel" />
-            </label>
-            <label htmlFor="Email">
-              Convidados
-              <input type="text" id="tel" />
-            </label>
+          <div className="columns multi-columns">
+            <div>
+              <label htmlFor="type-party">
+                Tipo da festa
+                <select name="sel-party" id="sel-party">
+                  {dataSelect.map((d, i) => (
+                    <option key={`${d}`[i]}>{d.txt}</option>
+                  ))}
+                </select>
+              </label>
+            </div>
+            <div className="mb-columns">
+              <div>
+                <label htmlFor="Email">
+                  Data do evento
+                  <input type="text" id="tel" />
+                </label>
+              </div>
+              <div>
+                <label htmlFor="Email">
+                  Convidados
+                  <input type="text" id="tel" />
+                </label>
+              </div>
+            </div>
           </div>
           <label htmlFor="msg">
             Deseja enviar um mensagem? Escreve para gente :-)
             <textarea name="msg-txt" id="msg-txt" cols="30" rows="3"></textarea>
           </label>
           <div className="check">
+            <input type="checkbox" id="check-email" name="check-email" />
             <label htmlFor="check-email">
-              <input type="checkbox" id="check-email" name="check-email" />
               Desejo receber o material de fornecedores parceiros por email.
             </label>
           </div>
           <div className="check">
+            <input type="checkbox" id="furniture" name="furniture" />
             <label htmlFor="furniture">
-              <input type="checkbox" id="furniture" name="furniture" />
               Tenho interesse em contar com a mobília da Villa H para o meu
               evento.
             </label>

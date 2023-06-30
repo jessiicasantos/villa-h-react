@@ -1,6 +1,6 @@
 import Card from '../../../Card/Card';
 import ChefBG from '../../img/chef-cooking.png';
-import { ReactComponent as Chef } from '../../../../assets/img/chef-icon.svg';
+import { ReactComponent as Chef } from '../../../../assets/img/cook-icon.svg';
 import '../Gastronomy.css';
 
 const CardBGastronomy = () => (

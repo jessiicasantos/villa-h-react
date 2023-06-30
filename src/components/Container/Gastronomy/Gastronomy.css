@@ -53,8 +53,12 @@
 @media screen and (max-width: 1024px) {
     .card-gastronomy {
         position: relative;
-        margin: 0 auto;
+        margin: 0 9px;
         top: -23px;
+    }
+
+    .bg-gastronomy {
+        width: 100%;
     }
 
     .bg-gastronomy img {
@@ -66,6 +70,28 @@
 
     .card-bg-gastronomy {
         margin: 0 auto 0;
-        padding: 6px 15px 0;
+        padding: 6px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-gastronomy h3 {
+        margin: 6px 0;
+        font-size: 20px;
+    }
+
+    .card-gastronomy p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card-gastronomy {
+        padding: 49PX 25px 44px 29px;
     }
 }

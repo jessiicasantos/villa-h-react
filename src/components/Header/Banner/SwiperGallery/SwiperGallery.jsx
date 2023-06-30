@@ -50,9 +50,17 @@ const SwiperGallery = () => {
             spaceBetween: 15,
             slidesPerView: 'auto',
           },
-          319: {
+          1024: {
+            // spaceBetween: 0,
+            slidesPerView: 'auto',
+          },
+          769: {
             spaceBetween: 0,
             slidesPerView: 1,
+          },
+          319: {
+            spaceBetween: 10,
+            slidesPerView: 1.2,
           },
         }}
       >
