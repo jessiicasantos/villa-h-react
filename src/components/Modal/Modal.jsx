@@ -22,6 +22,19 @@ const Modal = ({ id, className, title, closeBtn, gallery }) => (
         grabCursor={true}
         navigation
         pagination={{ clickable: true }}
+        breakpoints={{
+          1365: {
+            slidesPerView: 3,
+          },
+          1025: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          319: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+        }}
       >
         {gallery?.map((mg, ind) => (
           <SwiperSlide key={`${mg.id}${ind}`}>

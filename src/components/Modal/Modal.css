@@ -40,6 +40,7 @@
 
 .modal h2 {
     margin: 0 auto;
+    padding: 0 15px;
     text-align: center;
     color: #aa8b4e;
     font-family: 'Aleo', serif;
@@ -61,4 +62,14 @@
     height: 440px;
     object-fit: cover;
     object-position: bottom;
+}
+
+@media screen and (max-width: 1366px) {
+    .modal-photoSection .swiper-slide > img {
+        width: 95%;
+    }
+
+    .btn-close {
+        padding: 10px 15px;
+    }
 }
