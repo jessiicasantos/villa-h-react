@@ -108,7 +108,8 @@
     }
 
     .banner-head {
-        padding: 0 15px;
+        padding: 0 23px;
+        width: auto;
 
     }
 
@@ -119,11 +120,6 @@
     .checked-list {
         margin: 0 0 35px;
     }
-    
-    .swiper-gallery {
-        margin: 0 0 -99px;
-        max-width: 710px;
-    }
 
     .banner .socials,
     .banner .more {
@@ -133,7 +129,7 @@
 
 @media screen and (max-width: 768px) {
     .banner {
-        padding: 40px 0 0 30px;
+        padding: 40px 0 0;
     }
 
     .section-banner {

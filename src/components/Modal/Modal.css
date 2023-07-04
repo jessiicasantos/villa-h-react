@@ -13,7 +13,6 @@
     position: absolute;
     height: 60vh;
     width: 100%;
-    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -71,5 +70,6 @@
 
     .btn-close {
         padding: 10px 15px;
+        font-size: 35px;
     }
 }

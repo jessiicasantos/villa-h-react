@@ -150,6 +150,8 @@ nav .mb-wrapper {
 
     nav .mb-wrapper {
         display: none;
+        padding: 0 15px;
+        width: auto;
         flex-direction: column;
         justify-content: center;
     }

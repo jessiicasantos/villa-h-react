@@ -365,6 +365,10 @@ form .columns > div:last-child, form .mb-columns > div:last-child {
         padding: 43px 0 34px;
     }
 
+    .orcamento section p {
+        display: none;
+    }
+
     .orcamento-info,
     .form-contact {
         margin: 0 auto;
@@ -372,7 +376,7 @@ form .columns > div:last-child, form .mb-columns > div:last-child {
 
     .orcamento-info {
         padding: 0 0 101px;
-        background-position: 30% -150%;
+        background-position: 30% 44%;
     }
 
     .double-circle {
@@ -394,11 +398,15 @@ form .columns > div:last-child, form .mb-columns > div:last-child {
         line-height: 2.5vh;
         margin: 0;
     }
+
+    .form-contact button + p {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
     footer hr {
-        margin: 8px 0 38px;
+        margin: 8px 0 28px;
     }
 
     footer h3 {

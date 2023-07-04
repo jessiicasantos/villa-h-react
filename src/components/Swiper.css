@@ -197,6 +197,15 @@
         display: none;
     }
 
+    .swiper-gallery {
+        margin: 0 0 -99px;
+        max-width: 710px;
+    }
+
+    .swiper-gallery .swiper-wrapper {
+        padding: 0 0 0 28px;
+    }
+
     .swiper-gallery .swiper-slide {
         height: auto;
     }
@@ -240,7 +249,7 @@
     }
 
     .swiper-txt-testimonial h4, .swiper-txt-testimonial .swiper-slide button {
-        line-height: 4vh;
+        line-height: 150%;
     }
 
     .swiper-testimonial .swiper-button-prev, 
