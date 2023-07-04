@@ -252,6 +252,9 @@ form .columns > div:last-child, form .mb-columns > div:last-child {
     color: #5F5F5F;
     display: block; 
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .check input[type="checkbox"] {
@@ -283,13 +286,13 @@ form .columns > div:last-child, form .mb-columns > div:last-child {
     content: '';
     display: block;
     position: absolute;
-    top: 2px;
-    left: 7.5px;
+    top: 50.5%;
+    left: 7.4px;
     width: 4px;
     height: 10px;
     border: solid #1F2338;
     border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
+    transform: rotate(45deg) translate(-100%, -50%);
 }
 
 .form-contact .btn-dark-blue {
@@ -385,6 +388,11 @@ form .columns > div:last-child, form .mb-columns > div:last-child {
         padding: 10px 63px 11px 66px;
         width: 100%;
         justify-content: center;
+    }
+
+    .form-contact .check label {
+        line-height: 2.5vh;
+        margin: 0;
     }
 }
 
