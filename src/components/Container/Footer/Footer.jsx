@@ -5,7 +5,6 @@ import Section from '../../Section/Section';
 import { ReactComponent as Fish } from '../../../assets/img/fish-icon.svg';
 import BoxContact from './BoxContact/BoxContact';
 import { ReactComponent as DoubleCircle } from './img/double-circle.svg';
-import LogoKindle from './img/logo-kindle.png';
 import InputMask from 'react-input-mask';
 
 const dataSelect = [
@@ -147,9 +146,6 @@ const Footer = () => (
       <hr />
       <div className="copyright">
         <h6>VILLA H® 2020 - TODOS OS DIREITOS RESERVADOS</h6>
-        <a href="">
-          <img src={LogoKindle} alt="Logo Kindle" />
-        </a>
       </div>
     </div>
   </footer>

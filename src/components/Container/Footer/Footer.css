@@ -331,13 +331,14 @@ form .columns > div:last-child, form .mb-columns > div:last-child {
 
 
 .copyright h6 {
-    margin: 0 10px 0 0;
+    margin: 0 auto 0;
     font-family: 'Heebo', sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;    
     color: #FFFFFF;
     opacity: 0.5;
+    text-align: center;
 }
 
 .copyright a {
@@ -382,6 +383,8 @@ form .columns > div:last-child, form .mb-columns > div:last-child {
     .form-contact .btn-dark-blue {
         margin: 0 0 20px;
         padding: 10px 63px 11px 66px;
+        width: 100%;
+        justify-content: center;
     }
 }
 
@@ -456,5 +459,9 @@ form .columns > div:last-child, form .mb-columns > div:last-child {
 
     .copyright {
         justify-content: center;
+    }
+
+    .copyright h6 {
+        margin: 10px auto 0;
     }
 }
