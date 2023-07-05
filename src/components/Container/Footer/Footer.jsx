@@ -1,6 +1,5 @@
 import SwiperTestimonial from './SwiperTestimonial/SwiperTestimonial';
 import './Footer.css';
-// import SwiperTxtTestimonial from './SwiperTestimonial/SwiperTxtTestimonial';
 import Section from '../../Section/Section';
 import { ReactComponent as Fish } from '../../../assets/img/fish-icon.svg';
 import BoxContact from './BoxContact/BoxContact';
@@ -53,6 +52,7 @@ const Footer = () => (
           </a>
           <DoubleCircle className="double-circle" />
         </div>
+
         <form action="" method="" className="form-contact">
           <div className="columns">
             <label htmlFor="name">
@@ -142,6 +142,11 @@ const Footer = () => (
             <a href="#">Politica de Privacidade.</a>
           </p>
         </form>
+        <Section
+          className="theme-dark-blue orca-mb"
+          svg={<Fish className="fish" />}
+          title={<h3>Faça um orçamento</h3>}
+        />
       </div>
       <hr />
       <div className="copyright">

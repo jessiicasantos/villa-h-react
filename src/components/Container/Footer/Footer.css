@@ -353,6 +353,10 @@ form .columns > div:last-child, form .mb-columns > div:last-child {
     opacity: 0.5;
 }
 
+.orca-mb {
+    display: none;
+}
+
 @media screen and (max-width: 1366px) {
     footer h3 {
         margin: 0 0 18px;
@@ -363,6 +367,21 @@ form .columns > div:last-child, form .mb-columns > div:last-child {
 @media screen and (max-width: 1024px) {
     footer {
         padding: 43px 0 34px;
+    }
+
+    .orca-mb {
+        display: block;
+        max-width: 710px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .orca-mb h3 {
+        margin: 0 0 34px;
+    }
+
+    .orcamento {
+        flex-direction: column-reverse;
     }
 
     .orcamento section p {
@@ -379,8 +398,12 @@ form .columns > div:last-child, form .mb-columns > div:last-child {
         background-position: 30% 44%;
     }
 
+    .orcamento-info .theme-dark-blue {
+        display: none;
+    }
+
     .double-circle {
-        bottom: 53px;
+        bottom: 13px;
     }
 
     form .check {
@@ -401,6 +424,10 @@ form .columns > div:last-child, form .mb-columns > div:last-child {
 
     .form-contact button + p {
         text-align: center;
+    }
+
+    .box-contact {
+        margin: 57px 0 0;
     }
 }
 

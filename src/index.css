@@ -166,8 +166,7 @@ h2 {
   .cards-horizontal,
   .event-section,
   .anim-photo-card,
-  .bg-gastronomy,
-  .orcamento {
+  .bg-gastronomy {
     flex-direction: column;
   }
 }
