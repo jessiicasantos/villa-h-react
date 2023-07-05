@@ -3,10 +3,13 @@ import SalaoPrincipal from '../img/Salao-Principal.png';
 import Loft from '../img/Loft-e-varanda-externa.png';
 import Deck from '../img/Deck-Piscina.png';
 import Gastronomia from '../img/Gastronomia_Villa H.png';
+import Gastronomia2 from '../img/Gastronomia_Villa H-2.png';
 import Aurora from '../img/beautiful-green-red-aurora.jpg';
 import Bird from '../img/bird.png';
 import Restaurant from '../img/restaurant-mesa-montada.png';
 import Jantar from '../img/jantar-na-praia.png';
+import VistaNatureza from '../img/vista-natureza.png';
+import PartyPool from '../img/party-at-pool.png';
 import Photo from './Photo/Photo';
 import Section from '../../Section/Section';
 import Modal from '../../Modal/Modal';
@@ -92,16 +95,20 @@ const columns = [
     text: 'Ambiente parcialmente coberto, com uma varanda externa aberta, possibilitando a realização de cerimônias ao ar livre.',
     gallery: [
       {
+        url: Gastronomia2,
+        alt: 'Gastronomia',
+      },
+      {
         url: Gastronomia,
         alt: 'Gastronomia',
       },
       {
-        url: Loft,
-        alt: 'loft',
+        url: VistaNatureza,
+        alt: 'Vista da natureza',
       },
       {
-        url: SalaoPrincipal,
-        alt: 'Salão Principal',
+        url: PartyPool,
+        alt: 'Festa na piscina',
       },
       {
         url: Restaurant,
