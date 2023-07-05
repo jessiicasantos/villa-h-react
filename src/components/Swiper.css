@@ -21,6 +21,10 @@
     max-width: 553px;
 }
 
+.swiper-event .swiper-slide:not(:first-child) {
+    margin: 0 auto;
+}
+
 .swiper-event img {
     max-width: 221px;
     height: 150px;
