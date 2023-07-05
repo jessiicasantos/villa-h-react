@@ -119,9 +119,9 @@
     color: #FFFFFF;
 }
 
-.boat {
-    max-width: 1088px;
-    max-height: 858px;
+.anim-photo {
+    width: 1088px;
+    height: 858px;
     object-fit: cover;
 }
 
