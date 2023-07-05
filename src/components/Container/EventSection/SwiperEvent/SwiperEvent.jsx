@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import '../../../../styles.css';
-import { Mousewheel, Keyboard, Navigation } from 'swiper';
+import { Keyboard, Navigation } from 'swiper';
 import '../../../Swiper.css';
 
 const SwiperEvent = ({ gallery }) => {
@@ -12,12 +12,11 @@ const SwiperEvent = ({ gallery }) => {
       <hr />
       <h6>Veja fotos desse evento</h6>
       <Swiper
-        mousewheel={true}
         keyboard={{
           enabled: true,
         }}
         navigation
-        modules={[Mousewheel, Keyboard, Navigation]}
+        modules={[Keyboard, Navigation]}
         spaceBetween={10}
         slidesPerView={2.4}
         grabCursor={true}

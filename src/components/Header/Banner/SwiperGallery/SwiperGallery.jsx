@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import '../../../../styles.css';
 // import required modules
-import { Mousewheel, Keyboard, Navigation } from 'swiper';
+import { Keyboard, Navigation } from 'swiper';
 import Slide1 from '../img/Decoracao-Vila-H-1.png';
 import Slide2 from '../img/Festa-e-Paisagem-Villa-H.png';
 import Slide3 from '../img/Paisagem-Villa-H.png';
@@ -35,12 +35,11 @@ const SwiperGallery = () => {
   return (
     <>
       <Swiper
-        mousewheel={true}
         keyboard={{
           enabled: true,
         }}
         navigation
-        modules={[Mousewheel, Keyboard, Navigation]}
+        modules={[Keyboard, Navigation]}
         spaceBetween={15}
         slidesPerView={'auto'}
         grabCursor={true}
