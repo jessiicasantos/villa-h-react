@@ -7,6 +7,8 @@ import Suselle from '../img/Suselle.png';
 import Leonardo from '../img/Leonardo.png';
 import Bianca from '../img/Bianca.png';
 import Felipe from '../img/Felipe.svg';
+import Joao from '../img/joao.jpg';
+import Joana from '../img/joana.jpg';
 import { useState } from 'react';
 import More from './More';
 
@@ -32,19 +34,19 @@ const InfoTestimonial = () => {
     },
     {
       text: 'Felipe Sequi voluptatum modi temporibus deleniti, veritatis rerum consequuntur voluptatem. Debitis, eos recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis maxime corrupti ducimus veniam accusamus odit debitis et neque?',
-      photo: <Felipe />,
+      photo: Felipe,
       name: 'Felipe Bourbon',
       type: 'Festa “Small Wedding”',
     },
     {
       text: 'João Sequi voluptatum modi temporibus deleniti, veritatis rerum consequuntur voluptatem. Debitis, eos recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis maxime corrupti ducimus veniam accusamus odit debitis et neque?',
-      photo: <Felipe />,
+      photo: Joao,
       name: 'João Bourbon',
       type: 'Festa “Small Wedding”',
     },
     {
       text: 'Joana Sequi voluptatum modi temporibus deleniti, veritatis rerum consequuntur voluptatem. Debitis, eos recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis maxime corrupti ducimus veniam accusamus odit debitis et neque?',
-      photo: <Felipe />,
+      photo: Joana,
       name: 'Joana Bourbon',
       type: 'Festa “Small Wedding”',
     },

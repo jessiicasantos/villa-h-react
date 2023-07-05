@@ -65,7 +65,7 @@
 .swiper-testimonial svg {
     width: 65px;
     height: 65px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 50px;
     margin: 0 17px 0 0;
 }
