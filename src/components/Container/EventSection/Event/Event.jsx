@@ -21,12 +21,16 @@ const Event = ({ links, cardIsActive }) => {
           tag={c.tag}
           title={<h3>{c.title}</h3>}
           text={
-            <p className={readMore ? 'read-more' : 'read-less'}>{c.text}</p>
+            c.text ? (
+              <p className={readMore ? 'read-more' : 'read-less'}>{c.text}</p>
+            ) : null
           }
           more={
-            <button className={`more`} onClick={handleReadMore}>
-              {readMore ? 'Ler Menos' : 'Ler Mais'}
-            </button>
+            c.text ? (
+              <button className={`more`} onClick={handleReadMore}>
+                {readMore ? 'Ler Menos' : 'Ler Mais'}
+              </button>
+            ) : null
           }
           btn={
             <a href="#orcamento" className="btn-dark-blue">
