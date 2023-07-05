@@ -151,6 +151,7 @@ nav .mb-wrapper {
     nav .mb-wrapper {
         display: none;
         padding: 0 15px;
+        height: calc(90% - 106px);
         width: auto;
         flex-direction: column;
         justify-content: center;
@@ -161,6 +162,7 @@ nav .mb-wrapper {
     }
 
     .nav-links {
+        width: 100%;
         flex-direction: column;
         align-items: center;
         z-index: 999;
@@ -173,6 +175,7 @@ nav .mb-wrapper {
     .nav-link a {
         padding: 25px 18vw;
         width: 100%;
+        justify-content: center;
     }
     
     nav .btn-brd-gold {
@@ -198,5 +201,24 @@ nav .mb-wrapper {
     
     .socials-mb a {
         margin: 0 15px;
+    }
+
+    .nav-link {
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-link a {
+        padding: 15px 18vw;
+    }
+
+    .nav-link a, nav .btn-brd-gold {
+        font-size: 16px;
+    }
+
+    .top-nav .btn-brd-gold {
+        margin: 10px 0 0;
     }
 }
