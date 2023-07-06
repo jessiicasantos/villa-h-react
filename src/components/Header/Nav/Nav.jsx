@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import NavLogo from './NavLogo/NavLogo';
 import NavMbWrapper from './NavMbWrapper/NavMbWrapper';
 import Burguer from './Burguer/Burguer';
@@ -12,8 +12,28 @@ const Nav = () => {
     setIsOpen(!isOpen);
   };
 
+  const [sticky, setSticky] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', stickNav);
+
+    return () => {
+      window.removeEventListener('scroll', stickNav);
+    };
+  }, []);
+
+  const stickNav = () => {
+    if (window !== undefined) {
+      let windowHeight = window.pageYOffset;
+
+      console.log(windowHeight);
+
+      windowHeight > 400 ? setSticky('sticky') : setSticky('');
+    }
+  };
+
   return (
-    <nav className={`top-nav${active ? ' active' : ''}`}>
+    <nav className={`top-nav${active ? ' active' : ''} ${sticky}`}>
       <div className="main-nav">
         <NavLogo />
         <Burguer id="btn-nav-mb" isOpen={active} handleIsOpen={handleIsOpen} />

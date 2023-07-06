@@ -5,10 +5,16 @@
     align-items: center;
     justify-content: space-between;
     max-width: 1110px;
+    z-index: 9;
 }
 
-.top-nav.scroll {
+.top-nav.sticky {
     position: fixed;
+    background: red;
+    max-width: initial;
+    width: 100%;
+    top: 0;
+    padding: 0;
 }
 
 .nav-logo {
