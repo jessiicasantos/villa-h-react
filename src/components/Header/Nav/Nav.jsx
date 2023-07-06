@@ -28,7 +28,7 @@ const Nav = () => {
 
       console.log(windowHeight);
 
-      windowHeight > 400 ? setSticky('sticky') : setSticky('');
+      windowHeight > 457 ? setSticky('sticky') : setSticky('');
     }
   };
 

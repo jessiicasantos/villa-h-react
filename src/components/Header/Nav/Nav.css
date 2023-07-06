@@ -10,11 +10,12 @@
 
 .top-nav.sticky {
     position: fixed;
-    background: red;
+    background: #1F2338;
     max-width: initial;
     width: 100%;
     top: 0;
     padding: 0;
+    justify-content: center;
 }
 
 .nav-logo {
