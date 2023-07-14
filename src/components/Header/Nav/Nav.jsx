@@ -25,10 +25,13 @@ const Nav = () => {
   const stickNav = () => {
     if (window !== undefined) {
       let windowHeight = window.pageYOffset;
+      let windowWidth = window.innerWidth;
 
       console.log(windowHeight);
 
-      windowHeight > 457 ? setSticky('sticky') : setSticky('');
+      windowHeight > 457 && windowWidth > 1024
+        ? setSticky('sticky')
+        : setSticky('');
     }
   };
 

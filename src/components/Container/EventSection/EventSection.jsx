@@ -14,10 +14,10 @@ const EventSection = ({ data }) => (
       }
       text={
         <p>
-          Os espaços da Villa H foram planejados e decorados para acomodar todos
-          os tipos de eventos. Desde pequenas comemorações com a família a
+          Os espaços da Lorem Ipsum foram planejados e decorados para acomodar
+          todos os tipos de eventos. Desde pequenas comemorações com a família a
           celebrações grandiosas, com aquele toque de bom gosto e versatilidade
-          que só a Villa H tem.
+          que só a Lorem Ipsum tem.
         </p>
       }
     />

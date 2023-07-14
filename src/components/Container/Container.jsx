@@ -19,9 +19,9 @@ const Container = () => (
           title={<h2>Em cada ambiente, um encanto no olhar.</h2>}
           text={
             <p>
-              Localizada em São Francisco, no coração de Niterói, a Villa H é um
-              projeto único, obra do arquiteto mundialmente reconhecido, Zanine
-              Caldas. Ela nasceu para ser um complexo multiuso para todos
+              Localizada em São Francisco, no coração de Niterói, a Lorem Ipsum
+              é um projeto único, obra do arquiteto mundialmente reconhecido,
+              Zanine Caldas. Ela nasceu para ser um complexo multiuso para todos
               aqueles que sonham viver momentos inesquecíveis e diferenciados.
             </p>
           }

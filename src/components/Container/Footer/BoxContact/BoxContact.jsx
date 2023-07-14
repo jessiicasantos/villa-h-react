@@ -17,7 +17,7 @@ const dataContact = [
     link: 'https://www.google.com/maps/place/Villa+H/@-22.9152238,-43.1125778,17z/data=!3m1!4b1!4m5!3m4!1s0x99815a29e69905:0xbaa84dcba9860517!8m2!3d-22.9152238!4d-43.1103891',
     svg: Local,
     contact:
-      'Villa H, Estrada Leopoldo Fróes, 170A, São Francisco, Niterói – RJ',
+      'Lorem Ipsum, Estrada Leopoldo Fróes, 170A, São Francisco, Niterói – RJ',
   },
 ];
 

@@ -9,7 +9,7 @@ const cards = [
   {
     id: 'vista',
     title: 'Vista privilegiada',
-    text: 'A Villa H tem como cenário principal um ângulo especial da Baía de Guanabara, do Pão de Açúcar e do Cristo Redentor. Seja dia, noite ou no pôr do sol, é sempre uma experiência de tirar o fôlego.',
+    text: 'A Lorem Ipsum tem como cenário principal um ângulo especial da Baía de Guanabara, do Pão de Açúcar e do Cristo Redentor. Seja dia, noite ou no pôr do sol, é sempre uma experiência de tirar o fôlego.',
     photo: Boat,
     alt: 'Vista de barcos navegando entre as Montanhas ao pôr do sol.',
   },

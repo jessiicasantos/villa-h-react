@@ -131,7 +131,7 @@ const Footer = () => (
           <div className="check">
             <InputMask type="checkbox" id="furniture" name="furniture" />
             <label htmlFor="furniture">
-              Tenho interesse em contar com a mobília da Villa H para o meu
+              Tenho interesse em contar com a mobília da Lorem Ipsum para o meu
               evento.
             </label>
           </div>

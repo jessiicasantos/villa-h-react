@@ -14,7 +14,7 @@
     max-width: initial;
     width: 100%;
     top: 0;
-    padding: 0;
+    padding: 26px 15px 25px 0;
     justify-content: center;
 }
 
@@ -23,12 +23,13 @@
 }
 
 .nav-logo a {
-    padding: 40px 50px 32px 15px;
+    padding: 0 30px 0 0;
     display: inline-block;
 }
 
-.nav-logo svg {
-    max-width: 258px;
+.nav-logo svg,
+.nav-logo img {
+    max-width: 308px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -40,7 +41,7 @@ nav .mb-wrapper {
 }
 
 .nav-links {
-    padding: 0 30px 0 0;
+    padding: 0 33px 0 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -120,8 +121,9 @@ nav .mb-wrapper {
     }
 
     nav .mb-wrapper {
-        justify-content: space-between;
+        padding: 0 15px 0 0;
         width: 100%;
+        justify-content: space-between;
     }
 }
 
@@ -140,9 +142,16 @@ nav .mb-wrapper {
         overflow-y: auto;
         overflow-x: hidden;
     }
+    
+    .top-nav.sticky {
+        padding: 0;
+        height: fit-content;
+    }
 
     .top-nav.active {
         position: fixed;
+        padding: 0px;
+        height: 100%;
     }
 
     .main-nav {

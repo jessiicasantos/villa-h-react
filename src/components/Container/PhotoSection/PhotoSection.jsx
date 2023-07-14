@@ -64,7 +64,7 @@ const columns = [
     id: 'salao-principal',
     photo: SalaoPrincipal,
     title: 'Salão principal e varanda',
-    text: 'Ambiente totalmente climatizado, com cobertura e cortina de vidro, possibilitando que cerimônias e comemorações sejam realizadas com a vista deslumbrante que a Villa H proporciona.',
+    text: 'Ambiente totalmente climatizado, com cobertura e cortina de vidro, possibilitando que cerimônias e comemorações sejam realizadas com a vista deslumbrante que a Lorem Ipsum proporciona.',
     gallery: [
       {
         url: SalaoPrincipal,
@@ -130,7 +130,7 @@ const columns = [
   {
     id: 'gastronomia',
     photo: Gastronomia,
-    title: 'Gastronomia da Villa H',
+    title: 'Gastronomia da Lorem Ipsum',
     text: 'Área coberta e área ao redor da piscina, ambiente ao ar livre. Neste espaço é possível realizar cerimônias com vista direta para o Cristo redentor.',
     alt: '',
   },

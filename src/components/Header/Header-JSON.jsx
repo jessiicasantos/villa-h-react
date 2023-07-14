@@ -5,7 +5,7 @@ const Header = [
     NavLogo: <svg id="villa-h" />,
     NavMenu: [
       {
-        txt: 'A Villa H',
+        txt: 'A Lorem Ipsum',
         link: '#a-villa-h',
       },
       {

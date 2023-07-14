@@ -15,7 +15,7 @@ import More from './More';
 const InfoTestimonial = () => {
   const dataTestimonial = [
     {
-      text: 'Suselle Falar da Villa H me desperta muitos sentimentos bons. Foi o local escolhido para o grande dia, meu casamento. Não poderia ter escolhido melhor lugar, além de lindo e com uma localização privilegiada, os seus responsáveis são pessoas maravilhosas. Agradeço à laudantium dolore soluta vitae quos eaque molestiae iusto illo.',
+      text: 'Suselle Falar da Lorem Ipsum me desperta muitos sentimentos bons. Foi o local escolhido para o grande dia, meu casamento. Não poderia ter escolhido melhor lugar, além de lindo e com uma localização privilegiada, os seus responsáveis são pessoas maravilhosas. Agradeço à laudantium dolore soluta vitae quos eaque molestiae iusto illo.',
       photo: Suselle,
       name: 'Suselle Melo',
       type: 'Festa “Casamento tradicional”',

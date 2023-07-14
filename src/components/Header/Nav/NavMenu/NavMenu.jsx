@@ -1,7 +1,7 @@
 const menus = [
   {
-    href: '#a-villa-h',
-    text: 'A Villa H',
+    href: '#a-lorem-ipsum',
+    text: 'A Lorem',
   },
   {
     href: '#eventos',

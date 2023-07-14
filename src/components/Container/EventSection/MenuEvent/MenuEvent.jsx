@@ -99,7 +99,7 @@ const links = [
     svg: <Bride />,
     id: 'elopWed',
     title: 'Elopement Wedding',
-    text: 'É realizada uma cerimônia, sendo indicado para os casais que desejam viver intensamente o romantismo do momento. O ideal é que seja realizado apenas com os noivos, podendo contar com um número máximo de 10 pessoas, incluindo celebrante e fotógrafo. Os locais escolhidos para essa celebração normalmente conta com um visual de maravilhoso e a Villa H se encaixa perfeitamente, contribuindo com fotos incríveis deste dia.',
+    text: 'É realizada uma cerimônia, sendo indicado para os casais que desejam viver intensamente o romantismo do momento. O ideal é que seja realizado apenas com os noivos, podendo contar com um número máximo de 10 pessoas, incluindo celebrante e fotógrafo. Os locais escolhidos para essa celebração normalmente conta com um visual de maravilhoso e a Lorem Ipsum se encaixa perfeitamente, contribuindo com fotos incríveis deste dia.',
     gallery: [
       {
         url: SlidePre1,
@@ -151,7 +151,7 @@ const links = [
     svg: <StreamIcon />,
     id: 'smallWed',
     title: 'Small Wedding & Streaming',
-    text: 'O tempo de incertezas fez com que a Villa H se reinventasse. Com o Small Wedding Streaming, você pode ter o seu casamento dos sonhos, recebendo pessoalmente até 30 convidados mais íntimos e permitindo que muitos outros possam curtir e acompanhar cada detalhe de maneira remota, sem sair de casa.',
+    text: 'O tempo de incertezas fez com que a Lorem Ipsum se reinventasse. Com o Small Wedding Streaming, você pode ter o seu casamento dos sonhos, recebendo pessoalmente até 30 convidados mais íntimos e permitindo que muitos outros possam curtir e acompanhar cada detalhe de maneira remota, sem sair de casa.',
     gallery: [
       {
         url: SmallWddg1,
@@ -195,7 +195,7 @@ const links = [
     svg: <Camera />,
     id: 'sessao',
     title: 'Sessão Fotográfica e Vídeo',
-    text: 'Com o design e sofisticação dos espaços e ainda o cenário deslumbrante, a Villa H se torna um local perfeito para ensaios fotográficos individuais ou com marcas que queiram fotografar seus produtos e modelos em um ambiente diferenciado.',
+    text: 'Com o design e sofisticação dos espaços e ainda o cenário deslumbrante, a Lorem Ipsum se torna um local perfeito para ensaios fotográficos individuais ou com marcas que queiram fotografar seus produtos e modelos em um ambiente diferenciado.',
     gallery: [
       {
         url: SessaoFoto1,
@@ -219,7 +219,7 @@ const links = [
     svg: <GlassDrink />,
     id: 'dayUse',
     title: 'Day Use',
-    text: 'Day use é uma modalidade de hospedagem sem pernoite, podendo-se aproveitar a estrutura do local. Além da nossa vista maravilhosa, você pode aproveitar um dia de sol na piscina da Villa H. Assim, você pode curtir ao máximo tudo o que o nosso espaço tem a oferecer',
+    text: 'Day use é uma modalidade de hospedagem sem pernoite, podendo-se aproveitar a estrutura do local. Além da nossa vista maravilhosa, você pode aproveitar um dia de sol na piscina da Lorem Ipsum. Assim, você pode curtir ao máximo tudo o que o nosso espaço tem a oferecer',
     tag: <h5 className="tag"></h5>,
     gallery: [
       {
@@ -240,7 +240,7 @@ const links = [
     svg: <BreakFast />,
     id: 'break',
     title: 'Café da Manhã',
-    text: 'Já pensou em unir a família e amigos para curtir um café da manhã com a vista incrível da Villa H? Você curte um momento de lazer, aprecia o melhor da gastronomia e de quebra, tira várias fotos para atualizar as redes sociais.',
+    text: 'Já pensou em unir a família e amigos para curtir um café da manhã com a vista incrível da Lorem Ipsum? Você curte um momento de lazer, aprecia o melhor da gastronomia e de quebra, tira várias fotos para atualizar as redes sociais.',
     gallery: [
       {
         url: Cafe1,
@@ -280,7 +280,7 @@ const links = [
     svg: <PartyBuild />,
     id: 'aniversario',
     title: 'Aniversário/Festa 15 anos',
-    text: 'Para comemorar o seu dia e mais um ano cheio de sonhos a serem realizados, nada melhor do que fazer a sua festa na Villa H, um espaço com boas vibrações, ambiente aconchegante e uma vista que promete encantar os seus convidados.',
+    text: 'Para comemorar o seu dia e mais um ano cheio de sonhos a serem realizados, nada melhor do que fazer a sua festa na Lorem Ipsum, um espaço com boas vibrações, ambiente aconchegante e uma vista que promete encantar os seus convidados.',
     gallery: [
       {
         url: Niver1,
@@ -343,7 +343,7 @@ const links = [
     svg: <Ring />,
     id: 'noivado',
     title: 'Noivado',
-    text: 'A Villa H oferece vários formatos de festas de noivado para que seu compromisso seja inesquecível desde o início. Temos espaço para brunch, jantar e confraternização ao entardecer, sempre acompanhados da vista linda que cerca a Villa H.',
+    text: 'A Lorem Ipsum oferece vários formatos de festas de noivado para que seu compromisso seja inesquecível desde o início. Temos espaço para brunch, jantar e confraternização ao entardecer, sempre acompanhados da vista linda que cerca a Lorem Ipsum.',
   },
   {
     svg: <Camera />,
