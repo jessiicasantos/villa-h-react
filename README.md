@@ -1,3 +1,9 @@
+## Project of Landing Page in React
+
+### React version of project Villa H that I built as a Front-End developer on Kindle Agency.
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
